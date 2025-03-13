@@ -1,8 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import Image from "next/image";
 
 export default function CallbackSection() {
@@ -10,10 +7,10 @@ export default function CallbackSection() {
     <section id="callback-section" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl font-bold tracking-tight mb-4">
             Get a Free Consultation
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Fill out the form below and our team will contact you to discuss how
             we can help with your needs.
           </p>
@@ -24,40 +21,63 @@ export default function CallbackSection() {
             <div className="p-8 md:p-10">
               <form className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="section-name">Full Name</Label>
-                  <Input
+                  <label
+                    htmlFor="section-name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Full Name
+                  </label>
+                  <input
                     id="section-name"
+                    type="text"
                     placeholder="Enter your name"
                     required
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="section-email">Email</Label>
-                  <Input
+                  <label
+                    htmlFor="section-email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Email
+                  </label>
+                  <input
                     id="section-email"
                     type="email"
                     placeholder="Enter your email"
                     required
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="section-phone">Phone Number</Label>
-                  <Input
+                  <label
+                    htmlFor="section-phone"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Phone Number
+                  </label>
+                  <input
                     id="section-phone"
+                    type="tel"
                     placeholder="Enter your phone number"
                     required
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
-                <Button type="submit" className="w-full mt-2">
+                <button
+                  type="submit"
+                  className="w-full mt-2 px-4 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+                >
                   Submit Request
-                </Button>
+                </button>
               </form>
             </div>
-            <div className="hidden md:block relative bg-primary/10">
+            <div className="hidden md:block relative bg-blue-50">
               <Image
                 src="/placeholder.svg?height=600&width=500"
-                width={500}
-                height={600}
+                width={400}
+                height={400}
                 alt="Customer service representative"
                 className="object-cover h-full"
               />

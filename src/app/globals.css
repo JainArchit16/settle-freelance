@@ -4,6 +4,7 @@
   --primary: #00b050;
   --primary-dark: #009040;
   --secondary: #333333;
+  scroll-behavior: smooth;
 }
 
 body {
