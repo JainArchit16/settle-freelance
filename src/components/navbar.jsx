@@ -11,7 +11,50 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const services = [
+    { name: "Personal Loan Settlement", href: "/categories/personal-loans" },
+    {
+      name: "Credit Card Loan Settlement",
+      href: "/categories/credit-card-loans",
+    },
+    {
+      name: "Anti-Harassment Service",
+      href: "/categories/anti-harassment-service",
+    },
+    { name: "Credit Score Builder", href: "/categories/credit-score-builder" },
+    { name: "Home Loan Settlement", href: "/categories/home-loans" },
+    { name: "Vehicle Loan Settlement", href: "/categories/vehicle-loans" },
+    { name: "Education Loan Settlement", href: "/categories/education-loans" },
+  ];
 
+  const settlements = [
+    {
+      name: "One Time Settlement (OTS)",
+      href: "/services/one-time-settlement",
+    },
+    {
+      name: "OTS With Credit Clearance",
+      href: "/services/ots-credit-clearance",
+    },
+    { name: "Structured Settlement", href: "/services/structured-settlement" },
+    {
+      name: "Structured Settlement With Cleared Clearance",
+      href: "/services/structured-cleared-clearance",
+    },
+    {
+      name: "Moratorium Period Settlement",
+      href: "/services/moratorium-settlement",
+    },
+    {
+      name: "Reversed Dues Settlement",
+      href: "/services/reversed-dues-settlement",
+    },
+    {
+      name: "Statute Barred Settlement",
+      href: "/services/statute-barred-settlement",
+    },
+    { name: "Prepayment Settlement", href: "/services/prepayment-settlement" },
+  ];
   return (
     <nav className="w-full bg-white shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -55,117 +98,37 @@ export default function Navbar() {
             </Link>
             <div className="absolute left-0 pt-2 w-52 bg-white shadow-lg rounded-md hidden group-hover:block z-10">
               <div className="py-1 flex flex-nowrap flex-col">
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Personal Loan Settlement
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Credit Card Loan Settlement
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Anti-Harassment Service
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Credit Score Builder
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Home Loan Settlement
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Vehicle Loan Settlement
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Education Loan Settlement
-                </Link>
+                {services.map((loan, index) => (
+                  <Link
+                    key={index}
+                    href={loan.href}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    {loan.name}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
-          {/* One Time Settlement (OTS)
-OTS With Credit Clearance
-structured Settlement
-Structured Settlement With Cleared Clearance
-Moratorium Period Settlement
-Reversed dues Settlement
-Statute Barred Settlement
-Prepayment Settlement */}
           <div className="relative group">
             <Link
               href="/categories"
               className="text-black hover:text-green-600 font-medium flex items-center"
             >
-              Categories <span className="ml-1">▾</span>
+              Categories<span className="ml-1">▾</span>
             </Link>
 
             <div className="absolute -left-10 pt-2 w-52 bg-white shadow-lg rounded-md hidden group-hover:block z-10">
               <div className="py-1 flex flex-nowrap flex-col">
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  One Time Settlement (OTS)
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  OTS With Credit Clearance
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Structured Settlement
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Structured Settlement With Cleared Clearance
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Moratorium Period Settlement
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Reversed dues Settlement
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Statute Barred Settlement
-                </Link>
-                <Link
-                  href="/categories/personal-loans"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Prepayment Settlement
-                </Link>
+                {settlements.map((loan, index) => (
+                  <Link
+                    key={index}
+                    href={loan.href}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    {loan.name}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
@@ -213,76 +176,48 @@ Prepayment Settlement */}
               >
                 About Us
               </Link>
-              <div className="py-2">
+              <div className="py-2 group">
                 <button className="flex items-center justify-between w-full text-left text-black hover:text-green-600">
                   Services <span>▾</span>
                 </button>
-                <div className="pl-4 mt-1">
-                  <Link
-                    href="/services/loan-settlement"
-                    className="block py-2 text-sm text-gray-700 hover:text-green-600"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Loan Settlement
-                  </Link>
-                  <Link
-                    href="/services/debt-relief"
-                    className="block py-2 text-sm text-gray-700 hover:text-green-600"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Debt Relief
-                  </Link>
+
+                <div className="pl-4 mt-1 hidden group-hover:block">
+                  {services.map((settlement, index) => (
+                    <Link
+                      key={index}
+                      href={settlement.href}
+                      className="block py-2 text-sm text-gray-700 hover:text-green-600"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {settlement.name}
+                    </Link>
+                  ))}
                 </div>
               </div>
-              <div className="py-2">
+              <div className="py-2 group">
                 <button className="flex items-center justify-between w-full text-left text-black hover:text-green-600">
                   Categories <span>▾</span>
                 </button>
-                <div className="pl-4 mt-1">
-                  <Link
-                    href="/categories/personal-loans"
-                    className="block py-2 text-sm text-gray-700 hover:text-green-600"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Personal Loans
-                  </Link>
-                  <Link
-                    href="/categories/credit-cards"
-                    className="block py-2 text-sm text-gray-700 hover:text-green-600"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Credit Cards
-                  </Link>
+                <div className="pl-4 mt-1 hidden group-hover:block">
+                  {settlements.map((settlement, index) => (
+                    <Link
+                      key={index}
+                      href={settlement.href}
+                      className="block py-2 text-sm text-gray-700 hover:text-green-600 "
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {settlement.name}
+                    </Link>
+                  ))}
                 </div>
               </div>
-              <Link
-                href="/testimonials"
+              <a
+                href="#callback-section"
                 className="py-2 text-black hover:text-green-600"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Testimonials
-              </Link>
-              <Link
-                href="/blog"
-                className="py-2 text-black hover:text-green-600"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Blog
-              </Link>
-              <Link
-                href="/careers"
-                className="py-2 text-black hover:text-green-600"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Careers
-              </Link>
-              <Link
-                href="/contact"
-                className="py-2 text-black hover:text-green-600"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
+                Contact Us
+              </a>
             </div>
           </div>
         )}
