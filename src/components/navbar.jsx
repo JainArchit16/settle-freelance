@@ -53,23 +53,61 @@ export default function Navbar() {
             >
               Services <span className="ml-1">▾</span>
             </Link>
-            <div className="absolute left-0 pt-2 w-48 bg-white shadow-lg rounded-md hidden group-hover:block z-10">
-              <div className="py-1">
+            <div className="absolute left-0 pt-2 w-52 bg-white shadow-lg rounded-md hidden group-hover:block z-10">
+              <div className="py-1 flex flex-nowrap flex-col">
                 <Link
-                  href="/services/loan-settlement"
+                  href="/categories/personal-loans"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
-                  Loan Settlement
+                  Personal Loan Settlement
                 </Link>
                 <Link
-                  href="/services/debt-relief"
+                  href="/categories/personal-loans"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
-                  Debt Relief
+                  Credit Card Loan Settlement
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Anti-Harassment Service
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Credit Score Builder
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Home Loan Settlement
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Vehicle Loan Settlement
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Education Loan Settlement
                 </Link>
               </div>
             </div>
           </div>
+          {/* One Time Settlement (OTS)
+OTS With Credit Clearance
+structured Settlement
+Structured Settlement With Cleared Clearance
+Moratorium Period Settlement
+Reversed dues Settlement
+Statute Barred Settlement
+Prepayment Settlement */}
           <div className="relative group">
             <Link
               href="/categories"
@@ -77,26 +115,56 @@ export default function Navbar() {
             >
               Categories <span className="ml-1">▾</span>
             </Link>
-            {/* Personal Loan Settlement
-Credit Card Loan Settlement
-Anti-Harassment Service
-Credit Score Builder
-Home Loan Settlement
-Vehicle Loan Settlement
-Education Loan Settlement */}
-            <div className="absolute left-0 pt-2 w-48 bg-white shadow-lg rounded-md hidden group-hover:block z-10">
-              <div className="py-1">
+
+            <div className="absolute -left-10 pt-2 w-52 bg-white shadow-lg rounded-md hidden group-hover:block z-10">
+              <div className="py-1 flex flex-nowrap flex-col">
                 <Link
                   href="/categories/personal-loans"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
-                  Personal Loans
+                  One Time Settlement (OTS)
                 </Link>
                 <Link
-                  href="/categories/credit-cards"
+                  href="/categories/personal-loans"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
-                  Credit Cards
+                  OTS With Credit Clearance
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Structured Settlement
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Structured Settlement With Cleared Clearance
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Moratorium Period Settlement
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Reversed dues Settlement
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Statute Barred Settlement
+                </Link>
+                <Link
+                  href="/categories/personal-loans"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Prepayment Settlement
                 </Link>
               </div>
             </div>
@@ -107,24 +175,24 @@ Education Loan Settlement */}
           >
             Testimonials
           </Link> */}
-          <Link
+          {/* <Link
             href="/blog"
             className="text-black hover:text-green-600 font-medium"
           >
             Blog
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             href="/careers"
             className="text-black hover:text-green-600 font-medium"
           >
             Careers
-          </Link>
-          <Link
-            href="/contact"
+          </Link> */}
+          <a
+            href="#callback-section"
             className="text-black hover:text-green-600 font-medium"
           >
             Contact
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Navigation */}

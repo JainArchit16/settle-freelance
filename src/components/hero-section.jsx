@@ -23,12 +23,12 @@ export default function HeroSection() {
             in personal loan Settlement and protecting against creditor
             harassment. Trust our expertise for a stress-free Settlement.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="#callback-section"
             className="inline-flex items-center bg-white text-black px-6 py-3 rounded hover:bg-gray-100 transition-colors"
           >
-            Talk To Us <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
+            Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+          </a>
         </div>
       </div>
 
