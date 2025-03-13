@@ -179,7 +179,7 @@ export default function Footer() {
               </Link>
             </div>
 
-            <h3 className="text-lg font-semibold mt-6 mb-4">
+            {/* <h3 className="text-lg font-semibold mt-6 mb-4">
               DOWNLOAD OUR APP
             </h3>
             <div className="flex space-x-4">
@@ -199,7 +199,7 @@ export default function Footer() {
                   height={40}
                 />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 

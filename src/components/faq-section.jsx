@@ -33,6 +33,10 @@ const faqs = [
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
+  const [showAll, setShowAll] = useState(false);
+  const initialVisibleCount = 3;
+
+  const visibleFaqs = showAll ? faqs : faqs.slice(0, initialVisibleCount);
 
   return (
     <section className="py-16 bg-gray-50">
@@ -42,7 +46,7 @@ export default function FAQSection() {
         </h2>
 
         <div className="max-w-3xl mx-auto">
-          {faqs.map((faq, index) => (
+          {visibleFaqs.map((faq, index) => (
             <div key={index} className="mb-4">
               <button
                 className={`w-full flex items-center justify-between p-4 rounded-lg ${
@@ -66,12 +70,17 @@ export default function FAQSection() {
           ))}
         </div>
 
-        <div className="text-center mt-8">
-          <button className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition-colors inline-flex items-center">
-            View all questions
-            <ChevronDown className="ml-2 h-4 w-4" />
-          </button>
-        </div>
+        {!showAll && (
+          <div className="text-center mt-8">
+            <button
+              className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition-colors inline-flex items-center"
+              onClick={() => setShowAll(true)}
+            >
+              View all questions
+              <ChevronDown className="ml-2 h-4 w-4" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
