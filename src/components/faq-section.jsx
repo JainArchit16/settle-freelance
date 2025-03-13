@@ -1,14 +1,9 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { ChevronDown, ChevronUp } from "lucide-react"
+import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
-interface FAQItem {
-  question: string
-  answer: string
-}
-
-const faqs: FAQItem[] = [
+const faqs = [
   {
     question: "What kind of loans can be settled through settleloan.in?",
     answer:
@@ -34,15 +29,17 @@ const faqs: FAQItem[] = [
     answer:
       "Our team includes legal experts who can provide guidance and support if legal action is initiated. We work to protect your interests throughout the settlement process.",
   },
-]
+];
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number>(0)
+  const [openIndex, setOpenIndex] = useState(0);
 
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Frequently asked Questions</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Frequently asked Questions
+        </h2>
 
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
@@ -54,7 +51,11 @@ export default function FAQSection() {
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
               >
                 <span className="font-medium text-left">{faq.question}</span>
-                {openIndex === index ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                {openIndex === index ? (
+                  <ChevronUp className="h-5 w-5" />
+                ) : (
+                  <ChevronDown className="h-5 w-5" />
+                )}
               </button>
               {openIndex === index && (
                 <div className="p-4 bg-white rounded-b-lg">
@@ -73,6 +74,5 @@ export default function FAQSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
