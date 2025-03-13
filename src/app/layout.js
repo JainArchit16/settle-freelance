@@ -1,14 +1,22 @@
 import "./globals.css";
+import WelcomePopup from "@/components/welcome-popup";
+import Header from "@/components/header";
+import Navbar from "@/components/navbar";
 
 export const metadata = {
-  title: "Settles My Loan",
+  title: "SettlesMyLoan",
   description: "One Solution to all your finical problems",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <WelcomePopup />
+        <Header />
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

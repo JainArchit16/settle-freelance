@@ -52,11 +52,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/faqs" className="hover:text-green-500">
+                <a href="#faqs" className="hover:text-green-500">
                   FAQ's
-                </Link>
+                </a>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/testimonials" className="hover:text-green-500">
                   Testimonials
                 </Link>
@@ -65,17 +65,17 @@ export default function Footer() {
                 <Link href="/blog" className="hover:text-green-500">
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link href="/contact-us" className="hover:text-green-500">
+                <a href="#callback-section" className="hover:text-green-500">
                   Contact Us
-                </Link>
+                </a>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/careers" className="hover:text-green-500">
                   Careers
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

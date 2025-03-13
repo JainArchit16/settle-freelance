@@ -22,7 +22,7 @@ export default function AboutSection() {
               <div className="flex items-center mb-4">
                 <div className="w-6 h-0.5 bg-green-600 mr-2"></div>
                 <span className="text-green-600 font-medium uppercase">
-                  ABOUT SETTLE LOAN
+                  ABOUT SettlesMyLoan
                 </span>
               </div>
 
@@ -31,16 +31,18 @@ export default function AboutSection() {
               </h2>
 
               <p className="text-gray-700 mb-4">
-                Settle Loan is a prominent fintech company specialising in loan
-                Settlement and debt Settlement services. Our advanced solutions
-                are designed to assist individuals facing financial challenges
-                to overcome the burden of debt.
+                SettlesMyLoan is a dynamic fintech startup dedicated to
+                providing effective Loan Settlement and Debt Relief solutions.
+                Founded with the vision to assist individuals struggling with
+                overwhelming financial burdens, SettlesMyLoan offers innovative
+                strategies to help clients break free from the cycle of debt.
               </p>
 
               <p className="text-gray-700">
-                With our expertise and professional approach, we help clients
-                negotiate with creditors to reduce their outstanding debt and
-                establish manageable repayment plans.
+                Our expert consultants work closely with borrowers, negotiating
+                with banks and financial institutions to secure favorable
+                settlement terms — ensuring a clear path toward financial
+                stability.
               </p>
             </div>
           </div>
