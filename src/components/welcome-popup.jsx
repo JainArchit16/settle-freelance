@@ -5,6 +5,14 @@ import Image from "next/image";
 
 export default function WelcomePopup() {
   const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     // Show popup after a short delay when the page loads
@@ -17,6 +25,41 @@ export default function WelcomePopup() {
 
   const closePopup = () => {
     setIsOpen(false);
+    setSuccessMessage("");
+    setErrorMessage("");
+  };
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccessMessage("");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSuccessMessage("Your request has been submitted successfully!");
+        setFormData({ name: "", email: "", phone: "" });
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Something went wrong");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setErrorMessage(error.message || "Failed to submit your request.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -72,57 +115,81 @@ export default function WelcomePopup() {
                 how we can help with your needs.
               </p>
 
-              <form className="space-y-4">
+              {successMessage && (
+                <p className="text-green-600 font-medium mb-4">
+                  {successMessage}
+                </p>
+              )}
+              {errorMessage && (
+                <p className="text-red-600 font-medium mb-4">{errorMessage}</p>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="space-y-2">
                   <label
-                    htmlFor="popup-name"
+                    htmlFor="name"
                     className="block text-sm font-medium text-gray-700"
                   >
                     Full Name
                   </label>
                   <input
-                    id="popup-name"
+                    id="name"
                     type="text"
                     placeholder="Enter your name"
                     required
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
                 <div className="space-y-2">
                   <label
-                    htmlFor="popup-email"
+                    htmlFor="email"
                     className="block text-sm font-medium text-gray-700"
                   >
                     Email
                   </label>
                   <input
-                    id="popup-email"
+                    id="email"
                     type="email"
                     placeholder="Enter your email"
                     required
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
                 <div className="space-y-2">
                   <label
-                    htmlFor="popup-phone"
+                    htmlFor="phone"
                     className="block text-sm font-medium text-gray-700"
                   >
                     Phone Number
                   </label>
                   <input
-                    id="popup-phone"
+                    id="phone"
                     type="tel"
                     placeholder="Enter your phone number"
                     required
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full mt-2 px-4 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+                  disabled={loading}
+                  className={`w-full mt-2 px-4 py-2 bg-blue-${
+                    loading ? "400" : "600"
+                  } text-white font-medium rounded-md hover:bg-blue-${
+                    loading ? "400" : "700"
+                  } focus:outline-none focus:ring-${
+                    loading ? "0" : "2"
+                  } focus:ring-blue-${
+                    loading ? "400" : "500"
+                  } focus:ring-offset-${loading ? "0" : "2"} transition-colors`}
                 >
-                  Submit Request
+                  {loading ? "Submitting..." : "Submit Request"}
                 </button>
               </form>
             </div>

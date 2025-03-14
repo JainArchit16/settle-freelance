@@ -1,4 +1,5 @@
 // pages/api/send-email.js
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 const createAdminEmail = (data) => `
@@ -80,16 +81,15 @@ const createCustomerEmail = (data) => `
 </html>
 `;
 
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method not allowed" });
-  }
-
-  const { name, email, phone } = req.body;
+export async function POST(request) {
+  const { name, email, phone } = await request.json();
 
   // Validation
   if (!name || !email || !phone) {
-    return res.status(400).json({ message: "All fields are required" });
+    return NextResponse.json(
+      { message: "All fields are required" },
+      { status: 400 }
+    );
   }
 
   try {
@@ -111,15 +111,18 @@ export default async function handler(req, res) {
 
     // Send confirmation email to customer
     await transporter.sendMail({
-      from: `"Your Company Name" <${process.env.EMAIL_USER}>`,
+      from: `"SettlesMyLoan" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: "Thank You for Contacting Us",
       html: createCustomerEmail({ name }),
     });
 
-    return res.status(200).json({ success: true });
+    return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Email sending error:", error);
-    return res.status(500).json({ message: "Failed to send emails" });
+    return NextResponse.json(
+      { message: "Failed to send emails" },
+      { status: 500 }
+    );
   }
 }

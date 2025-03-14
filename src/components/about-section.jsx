@@ -21,7 +21,7 @@ export default function AboutSection() {
             <div className="mb-6">
               <div className="flex items-center mb-4">
                 <div className="w-6 h-0.5 bg-green-600 mr-2"></div>
-                <span className="text-green-600 font-medium uppercase">
+                <span className="text-green-600 font-medium">
                   ABOUT SettlesMyLoan
                 </span>
               </div>

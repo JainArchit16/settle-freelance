@@ -244,7 +244,7 @@ export default function AboutUsPage() {
             settlement journey with personalized solutions.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link href="/">
+            <Link href="/contact">
               <button className="bg-white text-sky-700 px-6 py-3 rounded-md font-medium text-lg hover:bg-gray-100 transition-colors">
                 Get In Touch
               </button>
