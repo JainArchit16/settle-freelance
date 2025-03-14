@@ -2,6 +2,7 @@ import "./globals.css";
 import WelcomePopup from "@/components/welcome-popup";
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "SettlesMyLoan",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

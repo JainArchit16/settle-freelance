@@ -3,7 +3,6 @@ import AboutSection from "@/components/about-section";
 import HowWeWork from "@/components/how-we-work";
 import FAQSection from "@/components/faq-section";
 import CallbackButton from "@/components/callback-button";
-import Footer from "@/components/footer";
 
 import CallbackSection from "@/components/callback-section";
 
@@ -15,7 +14,6 @@ export default function Home() {
       <HowWeWork />
       <CallbackSection />
       <FAQSection />
-      <Footer />
       <CallbackButton />
     </main>
   );

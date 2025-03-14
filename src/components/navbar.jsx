@@ -12,48 +12,54 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
   const services = [
-    { name: "Personal Loan Settlement", href: "/categories/personal-loans" },
+    { name: "Personal Loan Settlement", href: "/services/personal-loans" },
     {
       name: "Credit Card Loan Settlement",
-      href: "/categories/credit-card-loans",
+      href: "/services/credit-card-loans",
     },
     {
       name: "Anti-Harassment Service",
-      href: "/categories/anti-harassment-service",
+      href: "/services/anti-harassment-service",
     },
-    { name: "Credit Score Builder", href: "/categories/credit-score-builder" },
-    { name: "Home Loan Settlement", href: "/categories/home-loans" },
-    { name: "Vehicle Loan Settlement", href: "/categories/vehicle-loans" },
-    { name: "Education Loan Settlement", href: "/categories/education-loans" },
+    { name: "Credit Score Builder", href: "/services/credit-score-builder" },
+    { name: "Home Loan Settlement", href: "/services/home-loans" },
+    { name: "Vehicle Loan Settlement", href: "/services/vehicle-loans" },
+    { name: "Education Loan Settlement", href: "/services/education-loans" },
   ];
 
   const settlements = [
     {
       name: "One Time Settlement (OTS)",
-      href: "/services/one-time-settlement",
+      href: "/categories/one-time-settlement",
     },
     {
       name: "OTS With Credit Clearance",
-      href: "/services/ots-credit-clearance",
+      href: "/categories/ots-with-credit-clearance",
     },
-    { name: "Structured Settlement", href: "/services/structured-settlement" },
+    {
+      name: "Structured Settlement",
+      href: "/categories/structured-settlement",
+    },
     {
       name: "Structured Settlement With Cleared Clearance",
-      href: "/services/structured-cleared-clearance",
+      href: "/categories/structured-cleared-clearance",
     },
     {
       name: "Moratorium Period Settlement",
-      href: "/services/moratorium-settlement",
+      href: "/categories/moratorium-settlement",
     },
     {
       name: "Reversed Dues Settlement",
-      href: "/services/reversed-dues-settlement",
+      href: "/categories/reversed-dues-settlement",
     },
     {
       name: "Statute Barred Settlement",
-      href: "/services/statute-barred-settlement",
+      href: "/categories/statute-barred-settlement",
     },
-    { name: "Prepayment Settlement", href: "/services/prepayment-settlement" },
+    {
+      name: "Prepayment Settlement",
+      href: "/categories/prepayment-settlement",
+    },
   ];
   return (
     <nav className="w-full bg-white shadow-sm z-50">
