@@ -69,14 +69,30 @@ export default function ContactForm() {
   async function onSubmit(values) {
     setIsSubmitting(true);
     try {
-      // Here you would typically send the form data to your backend
-      await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulated API call
-      toast({
-        title: "Success!",
-        description:
-          "Your query has been submitted successfully. We'll get back to you soon.",
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
       });
-      form.reset();
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Success!",
+          description:
+            "Your query has been submitted successfully. We'll get back to you soon.",
+        });
+        form.reset();
+      } else {
+        throw new Error("Failed to send email");
+      }
     } catch (error) {
       toast({
         title: "Error",
@@ -322,7 +338,11 @@ export default function ContactForm() {
             /> */}
           </div>
 
-          <Button type="submit" className="w-full mt-6" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            className="w-full mt-6 hover:cursor-pointer hover:scale-120"
+            disabled={isSubmitting}
+          >
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />

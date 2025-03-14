@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import FloatingSvgs from "./floating-svgs";
 
 export default function CallbackSection() {
   const [formData, setFormData] = useState({
@@ -50,8 +51,16 @@ export default function CallbackSection() {
   };
 
   return (
-    <section id="callback-section" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="callback-section" className="py-16 bg-gray-50 relative">
+      <FloatingSvgs
+        count={30}
+        minSize={20}
+        maxSize={50}
+        zIndex={1}
+        isStatic={true}
+        // color="rgba(255, 255, 255, 0.2)"
+      />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold tracking-tight mb-4">
             Get a Free Consultation
@@ -62,7 +71,7 @@ export default function CallbackSection() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden z-10">
           <div className="grid md:grid-cols-2 gap-0">
             <div className="p-8 md:p-10">
               <form onSubmit={handleSubmit} className="space-y-4">

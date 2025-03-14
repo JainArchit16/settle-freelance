@@ -1,11 +1,11 @@
-import ContactHeader from "@/components/contact-header";
 import ContactForm from "@/components/contact-form";
 import ContactInfo from "@/components/contact-info";
+import CategoryHeader from "@/components/category-header";
 
 export default function ContactPage() {
   return (
     <main>
-      <ContactHeader />
+      <CategoryHeader title="Contact Us" />
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">

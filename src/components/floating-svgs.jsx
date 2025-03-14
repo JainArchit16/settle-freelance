@@ -12,7 +12,6 @@ import {
   Calculator,
 } from "lucide-react";
 
-// SVG components to use for floating elements
 const svgComponents = [
   CreditCard,
   DollarSign,
@@ -31,39 +30,40 @@ export default function FloatingSvgs({
   maxSize = 40,
   minDuration = 15,
   maxDuration = 30,
-  color = "rgba(0, 176, 80, 0.15)", // Using the green brand color with opacity
+  color = "rgba(0, 176, 80, 0.15)",
+  zIndex = 10,
+  isStatic = false,
 }) {
   const [floatingElements, setFloatingElements] = useState([]);
 
   useEffect(() => {
-    // Generate floating elements on component mount
     const elements = [];
 
     for (let i = 0; i < count; i++) {
-      // Randomly select an SVG component
       const SvgComponent =
         svgComponents[Math.floor(Math.random() * svgComponents.length)];
 
-      // Random size between minSize and maxSize
       const size = Math.floor(Math.random() * (maxSize - minSize)) + minSize;
-
-      // Random positions
       const left = `${Math.random() * 100}%`;
       const top = `${Math.random() * 100}%`;
-
-      // Random animation duration
       const duration =
         Math.floor(Math.random() * (maxDuration - minDuration)) + minDuration;
-
-      // Random delay
       const delay = Math.random() * 10;
-
-      // Random rotation
       const rotation = Math.random() * 360;
-
-      // Random direction (1 or -1)
       const directionX = Math.random() > 0.5 ? 1 : -1;
       const directionY = Math.random() > 0.5 ? 1 : -1;
+
+      const animationStyle = isStatic
+        ? {}
+        : {
+            animation: `float-x-${
+              directionX > 0 ? "right" : "left"
+            } ${duration}s infinite ease-in-out ${delay}s, float-y-${
+              directionY > 0 ? "down" : "up"
+            } ${duration * 0.7}s infinite ease-in-out ${delay}s, rotate ${
+              duration * 1.5
+            }s infinite linear ${delay}s`,
+          };
 
       elements.push(
         <div
@@ -74,15 +74,10 @@ export default function FloatingSvgs({
             top,
             width: `${size}px`,
             height: `${size}px`,
-            animation: `float-x-${
-              directionX > 0 ? "right" : "left"
-            } ${duration}s infinite ease-in-out ${delay}s, float-y-${
-              directionY > 0 ? "down" : "up"
-            } ${duration * 0.7}s infinite ease-in-out ${delay}s, rotate ${
-              duration * 1.5
-            }s infinite linear ${delay}s`,
             transform: `rotate(${rotation}deg)`,
             opacity: 0.7,
+            zIndex: zIndex,
+            ...animationStyle,
           }}
         >
           <SvgComponent size={size} color={color} strokeWidth={1.5} />
@@ -91,7 +86,16 @@ export default function FloatingSvgs({
     }
 
     setFloatingElements(elements);
-  }, [count, minSize, maxSize, minDuration, maxDuration, color]);
+  }, [
+    count,
+    minSize,
+    maxSize,
+    minDuration,
+    maxDuration,
+    color,
+    zIndex,
+    isStatic,
+  ]);
 
   return <div className={containerClassName}>{floatingElements}</div>;
 }

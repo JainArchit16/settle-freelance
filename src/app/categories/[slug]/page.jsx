@@ -207,8 +207,9 @@ const categories = {
   // Add more categories here
 };
 
-export default function CategoryPage({ params }) {
-  const category = categories[params.slug];
+export default async function CategoryPage({ params }) {
+  const { slug } = await params;
+  const category = categories[slug];
 
   if (!category) {
     notFound();
