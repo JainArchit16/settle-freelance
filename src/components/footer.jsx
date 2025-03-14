@@ -67,9 +67,9 @@ export default function Footer() {
                 </Link>
               </li> */}
               <li>
-                <a href="#callback-section" className="hover:text-green-500">
+                <Link href="/contact" className="hover:text-green-500">
                   Contact Us
-                </a>
+                </Link>
               </li>
               {/* <li>
                 <Link href="/careers" className="hover:text-green-500">

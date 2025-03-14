@@ -150,12 +150,12 @@ export default function Navbar() {
           >
             Careers
           </Link> */}
-          <a
-            href="#callback-section"
+          <Link
+            href="/contact"
             className="text-black hover:text-green-600 font-medium"
           >
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Navigation */}
@@ -212,7 +212,7 @@ export default function Navbar() {
                 </div>
               </div>
               <Link
-                href="/"
+                href="/contact"
                 className="py-2 text-black hover:text-green-600"
                 onClick={() => setIsMenuOpen(false)}
               >
