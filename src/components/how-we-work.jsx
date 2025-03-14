@@ -1,5 +1,52 @@
 import { Check } from "lucide-react";
 
+const steps = [
+  {
+    title: "Evaluation",
+    description:
+      "Our Financial Advisor will assess your income and debt situation to identify the most suitable loan settlement program tailored to your specific financial circumstances.",
+  },
+  {
+    title: "Talk to our Financial Advisor",
+    description:
+      "Consult with our financial advisor to review your loans and EMIs, determine your eligibility for loan settlement, and embark on the path to achieving financial freedom.",
+  },
+  {
+    title: "Enrol",
+    description:
+      "To utilize our services, enrollment in our Settle Loan program is required. This process includes signing a contract that clearly details the associated fees and outlines the comprehensive negotiation process.",
+  },
+  {
+    title: "Negotiation",
+    description:
+      "After you've built up sufficient savings, our legal team initiates negotiations with your creditors. We strive to secure a settlement that significantly reduces your payable amount compared to the original debt, advocating on your behalf throughout the process.",
+  },
+  {
+    title: "Savings",
+    description:
+      "Once enrolled in our Loan Settlement Program, you'll start building a savings fund dedicated to resolving your debt efficiently. This accumulated amount becomes a powerful tool in our negotiations with lenders, helping to alleviate your financial stress and pave the way for a more secure future.",
+  },
+  {
+    title: "Debt-Free Life",
+    description:
+      "Join our Settlement program to start saving towards a debt-free future. We'll work to optimize your savings plan and negotiate a successful loan settlement. Once settled, you'll receive confirmation and can enjoy the peace of mind that comes with being debt-free.",
+  },
+];
+
+const Step = ({ title, description }) => (
+  <div className="flex">
+    <div className="mr-4 mt-1">
+      <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
+        <Check className="w-5 h-5 text-white" />
+      </div>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-gray-300">{description}</p>
+    </div>
+  </div>
+);
+
 export default function HowWeWork() {
   return (
     <section className="w-full bg-[#0e1621] text-white py-16 px-5">
@@ -9,123 +56,18 @@ export default function HowWeWork() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
-          {/* Talk to our Financial Advisor */}
-          <div className="flex">
-            <div className="mr-4 mt-1">
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
-                <Check className="w-5 h-5 text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">
-                Talk to our Financial Advisor
-              </h3>
-              <p className="text-gray-300">
-                Connect with our financial advisor to discuss your loans and
-                EMIs and check your eligibility for loan Settlement, and take
-                the first step towards becoming debt-free.
-              </p>
-            </div>
-          </div>
-
-          {/* Evaluation */}
-          <div className="flex">
-            <div className="mr-4 mt-1">
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
-                <Check className="w-5 h-5 text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Evaluation</h3>
-              <p className="text-gray-300">
-                Our Financial Advisor will conduct an evaluation of your income
-                and debt status to determine your eligibility for a settled loan
-                program that is best suited to your unique needs.
-              </p>
-            </div>
-          </div>
-
-          {/* Enrol */}
-          <div className="flex">
-            <div className="mr-4 mt-1">
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
-                <Check className="w-5 h-5 text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Enrol</h3>
-              <p className="text-gray-300">
-                In order to access our company's services, you must enroll in
-                our Settle Loan program. This involves signing a contract that
-                outlines the fees you will incur and the complete negotiation
-                process.
-              </p>
-            </div>
-          </div>
-
-          {/* Savings */}
-          <div className="flex">
-            <div className="mr-4 mt-1">
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
-                <Check className="w-5 h-5 text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Savings</h3>
-              <p className="text-gray-300">
-                Upon enrollment in our Loan Settlement Program, you will begin
-                to save money in your account for a fast-track journey of debt
-                Settlement. These funds will be utilized when negotiating with
-                your lenders, alleviating any concerns or distress you may have
-                experienced.
-              </p>
-            </div>
-          </div>
-
-          {/* Negotiation */}
-          <div className="flex">
-            <div className="mr-4 mt-1">
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
-                <Check className="w-5 h-5 text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Negotiation</h3>
-              <p className="text-gray-300">
-                Once you have accumulated enough funds in your savings account,
-                our team of legal advisors will begin negotiations with your
-                creditors on your behalf. Through these negotiations, our
-                advisors will work to reach a Settlement with the creditors,
-                which will result in a reduced amount due to be paid in
-                comparison to the original amount owed.
-              </p>
-            </div>
-          </div>
-
-          {/* Debt-Free Life */}
-          <div className="flex">
-            <div className="mr-4 mt-1">
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
-                <Check className="w-5 h-5 text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Debt-Free Life</h3>
-              <p className="text-gray-300">
-                Join our Settlement program to save money in your account. We
-                will strive to secure the best savings program and settle your
-                loan. Upon Settlement, you will receive a letter and enjoy a
-                debt- free life.
-              </p>
-            </div>
-          </div>
+          {steps.map((step, index) => (
+            <Step key={index} {...step} />
+          ))}
         </div>
 
-        {/* <div className="flex justify-center mt-12">
+        {/* Uncomment if needed
+        <div className="flex justify-center mt-12">
           <button className="bg-white text-black px-6 py-3 rounded hover:bg-gray-200 transition-colors">
             Request a Callback
           </button>
-        </div> */}
+        </div>
+        */}
       </div>
     </section>
   );

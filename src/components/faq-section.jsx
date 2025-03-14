@@ -7,27 +7,27 @@ const faqs = [
   {
     question: "What kind of loans can be settled through settleloan.in?",
     answer:
-      "Settle Loan help in settling both Unsecured and secured loans like credit card loans, personal loans, consumer loans, business loans, home loans, vehicle loans and education loans, etc.",
+      "SettlesMyLoan assists in resolving both unsecured and secured loans, including credit card debts, personal loans, consumer loans, business loans, home loans, vehicle loans, and education loans. Our tailored solutions provide effective relief for diverse financial challenges.",
   },
   {
     question: "How much time it takes to settle the loan?",
     answer:
-      "The time taken to settle a loan varies depending on various factors including the type of loan, amount, and lender. Our team works efficiently to complete the settlement process as quickly as possible.",
+      "The loan settlement process with SettlesMyLoan typically spans 12 to 18 months, though individual timelines may vary based on your specific financial situation and potential savings. We work diligently to expedite your path to financial freedom.",
   },
   {
     question: "Will I be charged interest and late fees on my loans?",
     answer:
-      "During the settlement process, we work to negotiate not just the principal amount but also the interest and late fees. Our goal is to reduce your overall financial burden.",
+      "While creditors may continue to add interest and late fees, you will ultimately pay less than your original outstanding amount at the time of enrolling in the settlement program.",
   },
   {
     question: "How do I handle the calls from the bank or recovery agent?",
     answer:
-      "Once you enroll in our program, we provide guidance on handling communications from banks and recovery agents. We can also intervene on your behalf when necessary.",
+      "You may continue to receive calls from the bank or recovery agents regarding your loan. However, it's important to understand that these entities are required to follow a specific code of conduct established by the Reserve Bank of India (RBI) and the Supreme Court of India. These guidelines are designed to protect borrowers from harassment and ensure fair debt collection practices.",
   },
   {
     question: "What happens if the lender takes legal action against me?",
     answer:
-      "Our team includes legal experts who can provide guidance and support if legal action is initiated. We work to protect your interests throughout the settlement process.",
+      "While creditors retain the legal right to pursue cases for unpaid debts, most prefer negotiated settlements when feasible. Our experienced legal advisors at SettlesMyLoan are prepared to assist you should any legal challenges arise. We aim to resolve matters efficiently, often avoiding courtroom proceedings through skilled negotiation and our deep understanding of debt settlement practices. Our team works diligently to protect your interests and seek the most favorable outcome in your financial situation.",
   },
 ];
 

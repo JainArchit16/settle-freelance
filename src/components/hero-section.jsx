@@ -16,12 +16,12 @@ export default function HeroSection() {
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
         <div className="max-w-2xl text-white">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            Settle Your Loans with India's First Loan Settlement Company.
+            Settle Your Loans with India's Loan Settlement Company.
           </h1>
           <p className="text-lg md:text-xl mb-8">
-            Settle loan - India's premier Loan Settlement Company. Specializing
-            in personal loan Settlement and protecting against creditor
-            harassment. Trust our expertise for a stress-free Settlement.
+            SettlesMyLoan: Your trusted partner in financial freedom. We
+            specialize in personal loan settlements, protecting you from
+            creditor pressure, and guiding you towards a debt-free future.
           </p>
           <a
             href="#callback-section"
