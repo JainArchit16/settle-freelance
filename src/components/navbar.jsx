@@ -56,7 +56,7 @@ export default function Navbar() {
     { name: "Prepayment Settlement", href: "/services/prepayment-settlement" },
   ];
   return (
-    <nav className="w-full bg-white shadow-sm">
+    <nav className="w-full bg-white shadow-sm z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <div className="relative h-12 w-48 md:h-14 md:w-56">
@@ -96,7 +96,7 @@ export default function Navbar() {
             >
               Services <span className="ml-1">▾</span>
             </Link>
-            <div className="absolute left-0 pt-2 w-52 bg-white shadow-lg rounded-md hidden group-hover:block z-10">
+            <div className="absolute left-0 pt-2 w-52 bg-white shadow-lg rounded-md hidden group-hover:block z-40">
               <div className="py-1 flex flex-nowrap flex-col">
                 {services.map((loan, index) => (
                   <Link
@@ -118,7 +118,7 @@ export default function Navbar() {
               Categories<span className="ml-1">▾</span>
             </Link>
 
-            <div className="absolute -left-10 pt-2 w-52 bg-white shadow-lg rounded-md hidden group-hover:block z-10">
+            <div className="absolute -left-10 pt-2 w-52 bg-white shadow-lg rounded-md hidden group-hover:block z-40">
               <div className="py-1 flex flex-nowrap flex-col">
                 {settlements.map((loan, index) => (
                   <Link
@@ -160,7 +160,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-24 left-0 right-0 bg-white shadow-md z-20">
+          <div className="md:hidden absolute top-24 left-0 right-0 bg-white shadow-md z-40">
             <div className="flex flex-col px-4 py-2">
               <Link
                 href="/"
@@ -176,12 +176,12 @@ export default function Navbar() {
               >
                 About Us
               </Link>
-              <div className="py-2 group">
+              <div className="py-2 group z-40">
                 <button className="flex items-center justify-between w-full text-left text-black hover:text-green-600">
                   Services <span>▾</span>
                 </button>
 
-                <div className="pl-4 mt-1 hidden group-hover:block">
+                <div className="pl-4 mt-1 hidden group-hover:block z-40">
                   {services.map((settlement, index) => (
                     <Link
                       key={index}
@@ -211,13 +211,13 @@ export default function Navbar() {
                   ))}
                 </div>
               </div>
-              <a
-                href="#callback-section"
+              <Link
+                href="/"
                 className="py-2 text-black hover:text-green-600"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         )}
