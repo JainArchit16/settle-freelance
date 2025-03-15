@@ -1,43 +1,48 @@
-import { Check } from "lucide-react";
+import React from "react";
 
 const steps = [
   {
-    title: "Evaluation",
+    title: "Connect with Our Advisor",
     description:
-      "Our Financial Advisor will assess your income and debt situation to identify the most suitable loan settlement program tailored to your specific financial circumstances.",
+      "Reach out to our experienced financial consultant to review your financial situation. During this discussion, you'll explore options for managing loans, EMIs, and determine your eligibility for a suitable debt relief plan.",
   },
   {
-    title: "Talk to our Financial Advisor",
+    title: "Join Our Debt Management Program",
     description:
-      "Consult with our financial advisor to review your loans and EMIs, determine your eligibility for loan settlement, and embark on the path to achieving financial freedom.",
+      "To begin, you'll need to register for our Settle Loan program. This requires signing a formal agreement that details our fees and the entire negotiation strategy",
   },
   {
-    title: "Enrol",
+    title: "Build Your Savings",
     description:
-      "To utilize our services, enrollment in our Settle Loan program is required. This process includes signing a contract that clearly details the associated fees and outlines the comprehensive negotiation process.",
+      "After enrollment, you'll start adding funds to a designated savings account. These savings are vital for future negotiations and play a crucial role in reducing your outstanding debts.",
   },
   {
-    title: "Negotiation",
+    title: "Financial Assessment",
     description:
-      "After you've built up sufficient savings, our legal team initiates negotiations with your creditors. We strive to secure a settlement that significantly reduces your payable amount compared to the original debt, advocating on your behalf throughout the process.",
+      "Our advisor will analyze your income, expenses, and debts to recommend the most effective settlement plan tailored to your financial circumstances.",
   },
   {
-    title: "Savings",
+    title: "Creditor Negotiation",
     description:
-      "Once enrolled in our Loan Settlement Program, you'll start building a savings fund dedicated to resolving your debt efficiently. This accumulated amount becomes a powerful tool in our negotiations with lenders, helping to alleviate your financial stress and pave the way for a more secure future.",
+      "Once your savings have reached a sufficient amount, our legal team will initiate discussions with your creditors. Their objective is to negotiate a reduced settlement amount that minimizes your total debt",
   },
   {
-    title: "Debt-Free Life",
+    title: "Final Settlement",
     description:
-      "Join our Settlement program to start saving towards a debt-free future. We'll work to optimize your savings plan and negotiate a successful loan settlement. Once settled, you'll receive confirmation and can enjoy the peace of mind that comes with being debt-free.",
+      "Following successful negotiations, you will pay the agreed-upon amount from your savings account. Upon completion, you'll receive a confirmation letter verifying that your debt has been settled.",
+  },
+  {
+    title: "Enjoy Financial Independence",
+    description:
+      "With your debts resolved, you can embrace a stable financial future. Our goal is to help you regain control over your finances and achieve lasting peace of mind.",
   },
 ];
 
-const Step = ({ title, description }) => (
+const Step = ({ number, title, description }) => (
   <div className="flex">
     <div className="mr-4 mt-1">
-      <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">
-        <Check className="w-5 h-5 text-white" />
+      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
+        <span className="text-xl font-bold text-white">{number}</span>
       </div>
     </div>
     <div>
@@ -52,22 +57,22 @@ export default function HowWeWork() {
     <section className="w-full bg-[#0e1621] text-white py-16 px-5">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          How we work
+          Our Strategy
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
           {steps.map((step, index) => (
-            <Step key={index} {...step} />
+            <Step key={index} number={index + 1} {...step} />
           ))}
         </div>
-
-        {/* Uncomment if needed
         <div className="flex justify-center mt-12">
-          <button className="bg-white text-black px-6 py-3 rounded hover:bg-gray-200 transition-colors">
+          <a
+            href="#callback-section"
+            className="bg-white text-black px-6 py-3 rounded hover:bg-gray-200 transition-colors text-bold"
+          >
             Request a Callback
-          </button>
+          </a>
         </div>
-        */}
       </div>
     </section>
   );
