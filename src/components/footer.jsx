@@ -205,18 +205,21 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-800">
           <p className="text-sm text-gray-400 mb-6">
-            Disclaimer: Loan Settlement is at the discretion of the lenders and
-            only they can issue settlement letters. We provide legal support and
-            do not have any authority to issue such letters. Not all debts are
-            eligible for loan settlement. You should consider loan settlement
-            only if you are in financial distress and unable to pay your loan
-            EMIs.
+            Disclaimer: Loan settlement is a process managed entirely by
+            lenders, and only they have the authority to issue settlement
+            letters. At Settle Mitra, we provide professional legal support and
+            guidance but do not hold any authority to issue such letters.
+            Additionally, not all types of debt qualify for settlement. Loan
+            settlement should be considered only in cases of severe financial
+            hardship where you are unable to meet your EMI obligations.
           </p>
           <p className="text-sm text-gray-400 mb-6">
-            Settleloan.in is committed to following the highest standards of
-            governance in managing client information and providing professional
-            support to our clients. In this endeavorous, we work with several
-            organizations to meet globally recognized norms. These include:{" "}
+            At Settle Mitra, we prioritize client trust and data protection. Our
+            team is dedicated to ensuring transparency, confidentiality, and
+            professional guidance throughout the loan settlement process. By
+            aligning with globally recognized organizations, we uphold the
+            highest standards in governance and client support.
+            {/* These include:{" "}
             <Link href="#" className="text-green-500 hover:underline">
               GSA audit
             </Link>{" "}
@@ -239,12 +242,12 @@ export default function Footer() {
             -{" "}
             <Link href="#" className="text-green-500 hover:underline">
               CRISIL
-            </Link>
+            </Link> */}
           </p>
 
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © Savemoney Financial Services Pvt Ltd. All Rights Reserved.
+              © Settle Mitra Pvt Ltd. All Rights Reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link

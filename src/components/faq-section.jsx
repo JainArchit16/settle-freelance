@@ -5,29 +5,55 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqs = [
   {
-    question: "What kind of loans can be settled through settleloan.in?",
+    question: " What types of loans can be settled through Settle Mitra?",
     answer:
-      "Settle Mitra assists in resolving both unsecured and secured loans, including credit card debts, personal loans, consumer loans, business loans, home loans, vehicle loans, and education loans. Our tailored solutions provide effective relief for diverse financial challenges.",
+      " Settle Mitra assists in settling personal loans, credit card debts, business loans, and other unsecured loans. Certain secured loans may also be considered depending on the lender's discretion.",
   },
   {
-    question: "How much time it takes to settle the loan?",
+    question: "How long does the loan settlement process take?",
     answer:
-      "The loan settlement process with Settle Mitra typically spans 12 to 18 months, though individual timelines may vary based on your specific financial situation and potential savings. We work diligently to expedite your path to financial freedom.",
+      "The timeline varies based on the lender's policies and your financial situation. On average, settlements may take between 3 to 6 months.",
   },
   {
-    question: "Will I be charged interest and late fees on my loans?",
+    question: "Is loan settlement the right option for me?",
     answer:
-      "While creditors may continue to add interest and late fees, you will ultimately pay less than your original outstanding amount at the time of enrolling in the settlement program.",
+      "Loan settlement is ideal for individuals facing severe financial hardship who are unable to pay their EMIs regularly.",
   },
   {
-    question: "How do I handle the calls from the bank or recovery agent?",
+    question: "Will loan settlement affect my credit score?",
     answer:
-      "You may continue to receive calls from the bank or recovery agents regarding your loan. However, it's important to understand that these entities are required to follow a specific code of conduct established by the Reserve Bank of India (RBI) and the Supreme Court of India. These guidelines are designed to protect borrowers from harassment and ensure fair debt collection practices.",
+      "Yes, loan settlement may impact your credit score negatively. However, it can still be a better alternative to defaulting on payments entirely.",
   },
   {
-    question: "What happens if the lender takes legal action against me?",
+    question: "Can Settle Mitra guarantee a successful loan settlement?",
     answer:
-      "While creditors retain the legal right to pursue cases for unpaid debts, most prefer negotiated settlements when feasible. Our experienced legal advisors at Settle Mitra are prepared to assist you should any legal challenges arise. We aim to resolve matters efficiently, often avoiding courtroom proceedings through skilled negotiation and our deep understanding of debt settlement practices. Our team works diligently to protect your interests and seek the most favorable outcome in your financial situation.",
+      "While we provide expert negotiation and legal support, the final decision always lies with the lender.",
+  },
+  {
+    question: "What documents are required for the loan settlement process?",
+    answer:
+      " Key documents include loan account statements, ID proof, income details, and correspondence with lenders.",
+  },
+  {
+    question: " Is there a fee for consulting with Settle Mitra?",
+    answer:
+      "Yes, we charge a nominal consultation fee, which will be discussed upfront during your initial consultation.",
+  },
+  {
+    question:
+      "Can I negotiate with my lender directly instead of using Settle Mitra?",
+    answer:
+      "Yes, but professional guidance can improve your chances of achieving a favorable settlement with reduced stress.",
+  },
+  {
+    question: "What if my lender refuses to settle my loan?",
+    answer:
+      "While this can happen, our expert negotiators will explore alternative strategies or payment restructuring options to assist you.",
+  },
+  {
+    question: "How can I get started with Settle Mitra?",
+    answer:
+      "Simply visit our website, fill out the consultation form, and our financial advisors will connect with you to discuss your options.",
   },
 ];
 
