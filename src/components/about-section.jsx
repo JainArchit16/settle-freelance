@@ -22,7 +22,7 @@ export default function AboutSection() {
               <div className="flex items-center mb-4">
                 <div className="w-6 h-0.5 bg-green-600 mr-2"></div>
                 <span className="text-green-600 font-medium">
-                  ABOUT SettlesMyLoan
+                  ABOUT Settle Mitra
                 </span>
               </div>
 
@@ -31,10 +31,10 @@ export default function AboutSection() {
               </h2>
 
               <p className="text-gray-700 mb-4">
-                SettlesMyLoan is a dynamic fintech startup dedicated to
-                providing effective Loan Settlement and Debt Relief solutions.
-                Founded with the vision to assist individuals struggling with
-                overwhelming financial burdens, SettlesMyLoan offers innovative
+                Settle Mitra is a dynamic fintech startup dedicated to providing
+                effective Loan Settlement and Debt Relief solutions. Founded
+                with the vision to assist individuals struggling with
+                overwhelming financial burdens, Settle Mitra offers innovative
                 strategies to help clients break free from the cycle of debt.
               </p>
 

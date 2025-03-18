@@ -7,12 +7,12 @@ const faqs = [
   {
     question: "What kind of loans can be settled through settleloan.in?",
     answer:
-      "SettlesMyLoan assists in resolving both unsecured and secured loans, including credit card debts, personal loans, consumer loans, business loans, home loans, vehicle loans, and education loans. Our tailored solutions provide effective relief for diverse financial challenges.",
+      "Settle Mitra assists in resolving both unsecured and secured loans, including credit card debts, personal loans, consumer loans, business loans, home loans, vehicle loans, and education loans. Our tailored solutions provide effective relief for diverse financial challenges.",
   },
   {
     question: "How much time it takes to settle the loan?",
     answer:
-      "The loan settlement process with SettlesMyLoan typically spans 12 to 18 months, though individual timelines may vary based on your specific financial situation and potential savings. We work diligently to expedite your path to financial freedom.",
+      "The loan settlement process with Settle Mitra typically spans 12 to 18 months, though individual timelines may vary based on your specific financial situation and potential savings. We work diligently to expedite your path to financial freedom.",
   },
   {
     question: "Will I be charged interest and late fees on my loans?",
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "What happens if the lender takes legal action against me?",
     answer:
-      "While creditors retain the legal right to pursue cases for unpaid debts, most prefer negotiated settlements when feasible. Our experienced legal advisors at SettlesMyLoan are prepared to assist you should any legal challenges arise. We aim to resolve matters efficiently, often avoiding courtroom proceedings through skilled negotiation and our deep understanding of debt settlement practices. Our team works diligently to protect your interests and seek the most favorable outcome in your financial situation.",
+      "While creditors retain the legal right to pursue cases for unpaid debts, most prefer negotiated settlements when feasible. Our experienced legal advisors at Settle Mitra are prepared to assist you should any legal challenges arise. We aim to resolve matters efficiently, often avoiding courtroom proceedings through skilled negotiation and our deep understanding of debt settlement practices. Our team works diligently to protect your interests and seek the most favorable outcome in your financial situation.",
   },
 ];
 

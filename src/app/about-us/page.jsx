@@ -84,14 +84,14 @@ export default function AboutUsPage() {
               Our Mission
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              About SettlesMyLoan
+              About Settle Mitra
             </h2>
             <div className="space-y-4 text-gray-700">
               <p>
-                SettlesMyLoan is a dynamic fintech startup dedicated to
-                providing effective Loan Settlement and Debt Relief solutions.
-                Founded with the vision to assist individuals struggling with
-                overwhelming financial burdens, SettlesMyLoan offers innovative
+                Settle Mitra is a dynamic fintech startup dedicated to providing
+                effective Loan Settlement and Debt Relief solutions. Founded
+                with the vision to assist individuals struggling with
+                overwhelming financial burdens, Settle Mitra offers innovative
                 strategies to help clients break free from the cycle of debt.
                 Our expert consultants work closely with borrowers, negotiating
                 with banks and financial institutions to secure favorable
@@ -99,7 +99,7 @@ export default function AboutUsPage() {
                 stability.
               </p>
               <p>
-                At SettlesMyLoan, our mission is simple — to provide borrowers
+                At Settle Mitra, our mission is simple — to provide borrowers
                 with the tools, knowledge, and support they need to break free
                 from debt traps. We act as a trusted partner, ensuring every
                 client receives fair treatment, personalized guidance, and a
@@ -164,7 +164,7 @@ export default function AboutUsPage() {
               </div>
               <div>
                 <p className="text-gray-700 text-base">
-                  At SettlesMyLoan, our mission is simple — to provide borrowers
+                  At Settle Mitra, our mission is simple — to provide borrowers
                   with the tools, knowledge, and support they need to break free
                   from debt traps. We act as a trusted partner, ensuring every
                   client receives fair treatment, personalized guidance, and a
@@ -211,17 +211,17 @@ export default function AboutUsPage() {
                   <Award className="h-6 w-6 text-emerald-600" />
                 </div>
                 <h3 className="text-xl font-semibold">
-                  Why Choose SettlesMyLoan?
+                  Why Choose Settle Mitra?
                 </h3>
               </div>
               <div>
                 <p className="text-gray-700 text-base">
                   Unlike conventional recovery agencies that prioritize lenders,
-                  SettlesMyLoan stands with the borrowers. We are here to
-                  provide you with the right guidance, ensuring your financial
+                  Settle Mitra stands with the borrowers. We are here to provide
+                  you with the right guidance, ensuring your financial
                   well-being remains our top priority.<br></br> Whether you're
                   battling overdue EMIs, struggling with credit card debt, or
-                  worried about defaulting on a personal loan, SettlesMyLoan is
+                  worried about defaulting on a personal loan, Settle Mitra is
                   your trusted partner in achieving financial freedom
                 </p>
               </div>

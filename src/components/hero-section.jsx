@@ -19,7 +19,7 @@ export default function HeroSection() {
             India's No.1 Trusted Choice For Expert Loan Settlement Services
           </h1>
           <p className="text-lg md:text-xl mb-8">
-            SettlesMyLoan: Leading Experts in Loan Settlement Solutions. We
+            Settle Mitra: Leading Experts in Loan Settlement Solutions. We
             specialize in resolving personal loan challenges while ensuring
             protection from creditor harassment. Trust our proven strategies for
             a seamless and stress-free debt resolution.
