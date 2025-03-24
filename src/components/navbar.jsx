@@ -12,19 +12,19 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
   const services = [
-    { name: "Personal Loan Settlement", href: "/services/personal-loans" },
+    { name: "Personal Loan Settlement", href: "/services/personal-loan" },
     {
       name: "Credit Card Loan Settlement",
-      href: "/services/credit-card-loans",
+      href: "/services/credit-card",
     },
     {
       name: "Anti-Harassment Service",
-      href: "/services/anti-harassment-service",
+      href: "/services/anti-harassment",
     },
-    { name: "Credit Score Builder", href: "/services/credit-score-builder" },
-    { name: "Home Loan Settlement", href: "/services/home-loans" },
-    { name: "Vehicle Loan Settlement", href: "/services/vehicle-loans" },
-    { name: "Education Loan Settlement", href: "/services/education-loans" },
+    { name: "Credit Score Builder", href: "/services/credit-score" },
+    { name: "Home Loan Settlement", href: "/services/home-loan" },
+    { name: "Vehicle Loan Settlement", href: "/services/vehicle-loan" },
+    { name: "Education Loan Settlement", href: "/services/education-loan" },
   ];
 
   const settlements = [

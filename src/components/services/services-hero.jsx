@@ -78,14 +78,17 @@ export default function ServicesHero() {
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
-              <Button size="lg" asChild>
-                <Link href="/contact">
+              <Button size="lg" aschild="true">
+                <Link
+                  href="/contact"
+                  className="flex flex-row justify-between items-center"
+                >
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              {/* <Button variant="outline" size="lg" aschild="true">
                 <Link href="#services-categories">Explore Services</Link>
-              </Button>
+              </Button> */}
             </motion.div>
           </motion.div>
         </div>

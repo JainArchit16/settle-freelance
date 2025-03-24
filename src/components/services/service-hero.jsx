@@ -2,10 +2,18 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  Car,
+  CreditCard,
+  GraduationCap,
+  Shield,
+  Wallet,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Home from "@/app/page";
 
 export default function ServiceHero({ service }) {
   const controls = useAnimation();
@@ -37,6 +45,16 @@ export default function ServiceHero({ service }) {
       transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
     },
   };
+  const iconMap = {
+    Wallet,
+    CreditCard,
+    Home,
+    Car,
+    GraduationCap,
+    Shield,
+  };
+
+  const IconComponent = iconMap[service.icon];
 
   return (
     <section
@@ -102,14 +120,14 @@ export default function ServiceHero({ service }) {
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button size="lg" asChild>
-                <Link href="/contact">
+              <Button size="lg" aschild="true">
+                <Link href="/contact" className="flex flex-row items-center">
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              {/* <Button variant="outline" size="lg" aschild="true">
                 <a href="#pricing">View Pricing</a>
-              </Button>
+              </Button> */}
             </motion.div>
           </motion.div>
 
@@ -136,7 +154,7 @@ export default function ServiceHero({ service }) {
                 <div
                   className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 bg-gradient-to-r ${service.color} text-white`}
                 >
-                  <service.icon className="w-6 h-6" />
+                  <IconComponent className="w-6 h-6" />
                 </div>
                 <div>
                   <p className="font-semibold">

@@ -1,18 +1,15 @@
 import { notFound } from "next/navigation";
-import Header from "@/components/header";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import ServiceHero from "@/components/services/service-hero";
 import ServiceOverview from "@/components/services/service-overview";
-import ServiceBenefits from "@/components/services/service-benefits";
-import ServiceProcess from "@/components/services/service-process";
-import ServiceFaq from "@/components/services/service-faq";
+
 import ServiceRelated from "@/components/services/service-related";
-import ServiceCta from "@/components/services/service-cta";
+
 import { getServiceData } from "@/lib/services";
 
-export function generateMetadata({ params }) {
-  const service = getServiceData(params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const service = getServiceData(slug);
+  console.log(service);
 
   if (!service) {
     return {
@@ -27,8 +24,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function ServicePage({ params }) {
-  const service = getServiceData(params.slug);
+export default async function ServicePage({ params }) {
+  const { slug } = await params;
+  const service = getServiceData(slug);
 
   if (!service) {
     notFound();
@@ -36,16 +34,13 @@ export default function ServicePage({ params }) {
 
   return (
     <main>
-      <Header />
-      <Navbar />
       <ServiceHero service={service} />
       <ServiceOverview service={service} />
-      <ServiceBenefits service={service} />
-      <ServiceProcess service={service} />
-      <ServiceFaq service={service} />
-      <ServiceRelated currentSlug={params.slug} />
-      <ServiceCta service={service} />
-      <Footer />
+      {/* <ServiceBenefits service={service} /> */}
+      {/* <ServiceProcess service={service} /> */}
+      {/* <ServiceFaq service={service} /> */}
+      <ServiceRelated currentSlug={slug} />
+      {/* <ServiceCta service={service} /> */}
     </main>
   );
 }

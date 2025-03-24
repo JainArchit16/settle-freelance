@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Facebook, Linkedin, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
@@ -85,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/personal-loan-settlement"
+                  href="services/personal-loan"
                   className="hover:text-green-500"
                 >
                   Personal Loan Settlement
@@ -93,7 +92,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/credit-card-loan-settlement"
+                  href="services/credit-card"
                   className="hover:text-green-500"
                 >
                   Credit Card Loan Settlement
@@ -101,7 +100,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/anti-harassment-service"
+                  href="services/anti-harassment"
                   className="hover:text-green-500"
                 >
                   Anti-Harassment Service
@@ -109,7 +108,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/credit-score-builder"
+                  href="services/credit-score"
                   className="hover:text-green-500"
                 >
                   Credit Score Builder
@@ -117,7 +116,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/home-loan-settlement"
+                  href="services/home-loan"
                   className="hover:text-green-500"
                 >
                   Home Loan Settlement
@@ -125,7 +124,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/vehicle-loan-settlement"
+                  href="services/vehicle-loan"
                   className="hover:text-green-500"
                 >
                   Vehicle Loan Settlement
@@ -133,7 +132,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/education-loan-settlement"
+                  href="services/education-loan"
                   className="hover:text-green-500"
                 >
                   Education Loan Settlement

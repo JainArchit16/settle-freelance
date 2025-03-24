@@ -32,7 +32,7 @@ export default function ServicesCta() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
+              <Button size="lg" variant="secondary" aschild="true">
                 <Link href="/contact">
                   Contact Us <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -41,7 +41,7 @@ export default function ServicesCta() {
                 size="lg"
                 variant="outline"
                 className="bg-transparent text-white border-white hover:bg-white/10"
-                asChild
+                aschild="true"
               >
                 <Link href="/about-us">Learn More About Us</Link>
               </Button>
