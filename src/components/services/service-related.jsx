@@ -11,6 +11,7 @@ import {
   Home,
   Shield,
   Wallet,
+  Blocks,
 } from "lucide-react";
 // import { getRelatedServices } from "@/lib/services";
 import { services } from "@/lib/services";
@@ -33,6 +34,7 @@ export default function ServiceRelated({ currentSlug }) {
     Car,
     GraduationCap,
     Shield,
+    Blocks,
   };
 
   // const IconComponent = iconMap[relatedServices.icon];

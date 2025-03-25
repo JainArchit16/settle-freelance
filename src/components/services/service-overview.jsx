@@ -20,7 +20,7 @@ export default function ServiceOverview({ service }) {
             <h2 className="text-3xl font-bold mb-6 text-center">Overview</h2>
 
             <div className="prose prose-lg max-w-none">
-              <p>
+              {/* <p>
                 Our {service.title} service is designed to help individuals
                 struggling with overwhelming debt find relief and a path to
                 financial recovery. We understand the stress and challenges that
@@ -48,7 +48,13 @@ export default function ServiceOverview({ service }) {
                 strategies, and consumer protection laws to ensure you receive
                 the best possible outcome for your{" "}
                 {service.shortTitle.toLowerCase()} settlement.
-              </p>
+              </p> */}
+
+              {service.content?.map((paragraph, index) => (
+                <p key={index} className="whitespace-pre-line">
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </motion.div>
         </div>

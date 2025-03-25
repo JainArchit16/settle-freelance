@@ -8,6 +8,7 @@ import {
   Car,
   CreditCard,
   GraduationCap,
+  Blocks,
   Home,
   Shield,
   Wallet,
@@ -24,6 +25,7 @@ export default function ServicesCategories() {
     Car,
     GraduationCap,
     Shield,
+    Blocks,
   };
   return (
     <section id="services-categories" className="py-20 bg-white">

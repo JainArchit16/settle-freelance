@@ -18,6 +18,8 @@
 //    pricing: ServicePricing[]
 // }
 
+import { Content } from "@radix-ui/react-select";
+
 export const services = [
   {
     id: "personal-loan",
@@ -28,7 +30,9 @@ export const services = [
       "We aim at getting the best possible Settlement plan from the creditor(s) and repaying the amount decided in the Settlement plan. The Settlement amount is an amount that is more feasible than the actual amount owed to the creditor(s).",
     icon: "Wallet",
     color: "from-green-500 to-emerald-500",
-    heroImage: "/services/personal-loan-hero.svg",
+    content: [
+      "In this process, we aim at getting the best possible Settlement plan from the creditor(s) and repaying the amount decided in the Settlement plan. The Settlement amount is an amount that is more feasible than the actual amount owed to the creditor(s).\n\n Many people seek help from Settle Loan for settling their obligations with the Banks and NBFCs. As the Bank(s)/NBFC(s) do not agree on Settlement easily and continuously harass the customers for repayment of their Debt. \n \n There are several reasons why an individual may pursue a personal loan Settlement, including financial hardship, a change in employment or income, or an inability to keep up with monthly payments. \n\n If you're thinking about settling a personal loan, it's crucial to consult a financial advisor. They can provide you with guidance to assess your options and help you make a well-informed decision. They can also assist you in comprehending the possible outcomes of settling a loan and figuring out the best course of action for your financial situation.",
+    ],
   },
   {
     id: "credit-card",
@@ -59,8 +63,8 @@ export const services = [
     shortTitle: "Credit Score",
     description:
       "Are you asking yourself the question of how to improve your CIBIL score after loan Settlement?",
-    icon: "Shield",
-    color: "from-teal-500 to-emerald-500",
+    icon: "Blocks",
+    color: "from-red-500 to-red-100",
     heroImage: "/services/anti-harassment-hero.svg",
   },
   {
