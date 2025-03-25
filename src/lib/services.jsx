@@ -43,7 +43,11 @@ export const services = [
       "Credit card debt accrues a higher rate of interest and other related charges making it difficult to repay the debt. These extra interest charges result in an increase in debt amount along with financial stress.",
     icon: "CreditCard",
     color: "from-blue-500 to-cyan-500",
-    heroImage: "/services/credit-card-hero.svg",
+    content: [
+      "Credit card debt accrues a higher rate of interest and other related charges making it difficult to repay the debt. These extra interest charges result in an increase in debt amount along with financial stress. It also reduces the ability to save and invest the money available. If you are seeking help in resolving a credit card debt, you should consider Settleloan. Saving money can lead to long-term financial improvement.",
+      "Credit card loans should only be used as a last resort for emergency expenditures if you don't have savings, according to credit experts. They are tempting because they are quick and simple to obtain as there is no need for an application. However, if you're already in debt, it may exacerbate the problem.",
+      "Taking a credit card loan will also raise your credit utilization rate, which is the percentage of your limit that has been utilized. Most financial experts advise keeping your overall usage under 50% to keep credit score high.",
+    ],
   },
   {
     id: "anti-harassment",
@@ -54,7 +58,9 @@ export const services = [
       "Harassment by recovery agents is quite common in India, in spite of several Supreme Court judgments and RBI guidelines prohibiting harassment of borrowers. Read on to know how we can help with our Anti-harassment Service!",
     icon: "Shield",
     color: "from-teal-500 to-emerald-500",
-    heroImage: "/services/anti-harassment-hero.svg",
+    content: [
+      "Harassment by recovery agents is quite common in India, in spite of several Supreme Court judgments and RBI guidelines prohibiting harassment of borrowers. Read on to know how we can help with our Anti-harassment Service!",
+    ],
   },
   {
     id: "credit-score",
@@ -65,7 +71,9 @@ export const services = [
       "Are you asking yourself the question of how to improve your CIBIL score after loan Settlement?",
     icon: "Blocks",
     color: "from-red-500 to-red-100",
-    heroImage: "/services/anti-harassment-hero.svg",
+    content: [
+      "Improving credit score is not an overnight task. As part of the process, we will assign a senior credit counsellor who will handhold you over 3-6 months or longer if required, to help you to take the right decisions and implement activities that will improve your score over time.",
+    ],
   },
   {
     id: "home-loan",
@@ -76,7 +84,9 @@ export const services = [
       "You can benefit from a decrease in your EMI as well as cheaper interest rates. Most Importantly it eases your financial burden, giving you peace of mind.",
     icon: "Home",
     color: "from-purple-500 to-violet-500",
-    heroImage: "/services/home-loan-hero.svg",
+    content: [
+      "You can benefit from a decrease in your EMI as well as cheaper interest rates. Most Importantly it eases your financial burden, giving you peace of mind.",
+    ],
   },
   {
     id: "vehicle-loan",
@@ -87,7 +97,13 @@ export const services = [
       "A vehicle loan Settlement is the total amount needed to settle, or completely payoff an existing vehicle loan. Vehicle loan Settlement is another term for what is commonly referred to as the payoff amount. vehicle loan Settlements are normally time-sensitive quotations and the amount of a Settlement can vary from day to day.",
     icon: "Car",
     color: "from-orange-500 to-amber-500",
-    heroImage: "/services/vehicle-loan-hero.svg",
+    content: [
+      "A vehicle loan Settlement is the total amount needed to settle, or completely payoff an existing vehicle loan. Vehicle loan Settlement is another term for what is commonly referred to as the payoff amount. vehicle loan Settlements are normally time-sensitive quotations and the amount of a Settlement can vary from day to day.",
+      "The borrower settles the outstanding balance on the auto loan as specified in the loan agreement, often in a single payment or over installments. This payment fully discharges the lender's debt.",
+      "To avoid paying interest and get full ownership of the vehicle sooner, some borrowers opt to pay off their auto loan before the specified term expires. Reviewing the loan terms is necessary to see if there are any fines or penalties for paying off the loan early.",
+      "The lender releases the lien on the vehicle after receiving the entire loan Settlement amount. This enables the title of the vehicle to be transferred to the borrower, proving full ownership.",
+      "The lender gives proof of the debt Settlement and the borrower's unequivocal ownership of the vehicle, such as a lien release or satisfaction letter. These records are crucial for reference purposes in the future and for the eventual sale of the car.",
+    ],
   },
   {
     id: "education-loan",
@@ -98,7 +114,9 @@ export const services = [
       "Education loan Settlement refers to the process of negotiating with a lender to reach an agreement on the repayment terms of an education loan. When borrowers encounter financial difficulties and become unable to fulfil their loan obligations, they may explore options for loan Settlement to amicably resolve their debt.",
     icon: "GraduationCap",
     color: "from-red-500 to-rose-500",
-    heroImage: "/services/education-loan-hero.svg",
+    content: [
+      "Education loan Settlement refers to the process of negotiating with a lender to reach an agreement on the repayment terms of an education loan. When borrowers encounter financial difficulties and become unable to fulfil their loan obligations, they may explore options for loan Settlement to amicably resolve their debt.",
+    ],
   },
 ];
 

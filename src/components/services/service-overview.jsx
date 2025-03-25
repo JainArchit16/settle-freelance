@@ -10,7 +10,7 @@ export default function ServiceOverview({ service }) {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 20 }}
@@ -51,9 +51,12 @@ export default function ServiceOverview({ service }) {
               </p> */}
 
               {service.content?.map((paragraph, index) => (
-                <p key={index} className="whitespace-pre-line">
-                  {paragraph}
-                </p>
+                <>
+                  <p key={index} className="whitespace-pre-line">
+                    {paragraph}
+                  </p>
+                  <br></br>
+                </>
               ))}
             </div>
           </motion.div>
