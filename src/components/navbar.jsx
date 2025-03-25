@@ -63,11 +63,11 @@ export default function Navbar() {
   ];
   return (
     <nav className="w-full bg-white shadow-sm z-50">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-0 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <div className="relative h-12 w-48 md:h-14 md:w-56">
+          <div className="relative h-12 w-48 md:h-20 md:w-60">
             <Image
-              src="/logo.png"
+              src="/logowbg.png"
               alt="Settle Loan Logo"
               fill
               style={{ objectFit: "contain" }}

@@ -5,8 +5,11 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export const metadata = {
-  title: "SettlesMyLoan",
+  title: "Settle Mitra",
   description: "One Solution to all your finical problems",
+  icons: {
+    icon: "/logowbg.png",
+  },
 };
 
 export default function RootLayout({ children }) {
