@@ -51,12 +51,10 @@ export default function ServiceOverview({ service }) {
               </p> */}
 
               {service.content?.map((paragraph, index) => (
-                <>
-                  <p key={index} className="whitespace-pre-line">
-                    {paragraph}
-                  </p>
+                <div key={index}>
+                  <p className="whitespace-pre-line">{paragraph}</p>
                   <br></br>
-                </>
+                </div>
               ))}
             </div>
           </motion.div>
