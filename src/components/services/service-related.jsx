@@ -12,7 +12,15 @@ import {
   Shield,
   Wallet,
 } from "lucide-react";
-import { getRelatedServices } from "@/lib/services";
+// import { getRelatedServices } from "@/lib/services";
+import { services } from "@/lib/services";
+
+function getRelatedServices(currentSlug, count = 3) {
+  return services
+    .filter((service) => service.slug !== currentSlug)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, count);
+}
 
 export default function ServiceRelated({ currentSlug }) {
   const relatedServices = getRelatedServices(currentSlug, 3);

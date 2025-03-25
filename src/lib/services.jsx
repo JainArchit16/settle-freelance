@@ -98,13 +98,13 @@ export const services = [
   },
 ];
 
-export function getServiceData(slug) {
-  return services.find((service) => service.slug === slug);
-}
+// export function getServiceData(slug) {
+//   return services.find((service) => service.slug === slug);
+// }
 
-export function getRelatedServices(currentSlug, count = 3) {
-  return services
-    .filter((service) => service.slug !== currentSlug)
-    .sort(() => 0.5 - Math.random())
-    .slice(0, count);
-}
+// export function getRelatedServices(currentSlug, count = 3) {
+//   return services
+//     .filter((service) => service.slug !== currentSlug)
+//     .sort(() => 0.5 - Math.random())
+//     .slice(0, count);
+// }

@@ -215,9 +215,7 @@ export default function Footer() {
           <p className="text-sm text-gray-400 mb-6">
             At Settle Mitra, we prioritize client trust and data protection. Our
             team is dedicated to ensuring transparency, confidentiality, and
-            professional guidance throughout the loan settlement process. By
-            aligning with globally recognized organizations, we uphold the
-            highest standards in governance and client support.
+            professional guidance throughout the loan settlement process.
             {/* These include:{" "}
             <Link href="#" className="text-green-500 hover:underline">
               GSA audit
@@ -248,7 +246,7 @@ export default function Footer() {
             <p className="text-sm text-gray-400">
               © Settle Mitra Pvt Ltd. All Rights Reserved.
             </p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
+            {/* <div className="flex space-x-4 mt-4 md:mt-0">
               <Link
                 href="/terms"
                 className="text-sm text-gray-400 hover:text-white"
@@ -261,7 +259,7 @@ export default function Footer() {
               >
                 Privacy Policy
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

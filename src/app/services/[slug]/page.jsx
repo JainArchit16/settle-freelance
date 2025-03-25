@@ -3,13 +3,15 @@ import ServiceHero from "@/components/services/service-hero";
 import ServiceOverview from "@/components/services/service-overview";
 
 import ServiceRelated from "@/components/services/service-related";
+import { services } from "@/lib/services";
 
-import { getServiceData } from "@/lib/services";
+function getServiceData(slug) {
+  return services.find((service) => service.slug === slug);
+}
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const service = getServiceData(slug);
-  console.log(service);
 
   if (!service) {
     return {
