@@ -63,13 +63,14 @@ export default function Navbar() {
   ];
   return (
     <nav className="w-full bg-white shadow-sm z-50">
-      <div className="container mx-auto px-4 py-1 flex justify-between items-center">
+      <div className="mx-auto px-2 py-1 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <div className="relative h-12 w-48 md:h-16 md:w-64">
             <Image
               src="/logowbg.png"
               alt="Settle Mitra Logo"
               fill
+              className=""
               style={{ objectFit: "contain" }}
               priority
             />
