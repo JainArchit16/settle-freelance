@@ -39,24 +39,27 @@ export default function ServiceHero({ service }) {
   };
 
   const extractColor = (colorString, defaultColor) => {
-    if (!colorString) return defaultColor;
+    if (!colorString) return { primary: defaultColor, secondary: defaultColor };
 
     try {
       const parts = colorString.split(" ");
-      if (parts.length >= 2 && parts[1].includes("from-")) {
-        return parts[1].replace("from-", "").split("-")[0];
+      if (parts[0].includes("from-") && parts[1].includes("to-")) {
+        const primary = parts[0].replace("from-", "").split("-")[0];
+        const secondary = parts[1].replace("to-", "").split("-")[0];
+        return { primary, secondary };
       }
-      if (parts.length >= 3 && parts[2].includes("to-")) {
-        return parts[2].replace("to-", "").split("-")[0];
-      }
-      return defaultColor;
+      return { primary: defaultColor, secondary: defaultColor };
     } catch (error) {
-      return defaultColor;
+      return { primary: defaultColor, secondary: defaultColor };
     }
   };
 
-  const primaryColor = extractColor(service.color || "", "green");
-  const secondaryColor = extractColor(service.color || "", "emerald");
+  const { primary: primaryColor, secondary: secondaryColor } = extractColor(
+    service.color || "",
+    "green"
+  );
+
+  // const secondaryColor = extractColor(service.color || "", "emerald");
 
   const colorMap = {
     green: "#00B050",
@@ -74,7 +77,9 @@ export default function ServiceHero({ service }) {
 
   const primaryColorHex = colorMap[primaryColor] || "#00B050";
   const secondaryColorHex = colorMap[secondaryColor] || "#10B981";
-
+  console.log(primaryColor, "1");
+  console.log(secondaryColor, "2");
+  // console.log(service.color);
   return (
     <section className="relative overflow-hidden pt-20 pb-24">
       <div
