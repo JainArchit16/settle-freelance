@@ -188,7 +188,7 @@ export default function Navbar() {
                   Services <span>▾</span>
                 </button>
 
-                <div className="pl-4 mt-1 hidden group-hover:block z-40">
+                <div className="pl-4 mt-1 group-hover:block z-40">
                   {services.map((settlement, index) => (
                     <Link
                       key={index}
@@ -205,7 +205,7 @@ export default function Navbar() {
                 <button className="flex items-center justify-between w-full text-left text-black hover:text-green-600">
                   Categories <span>▾</span>
                 </button>
-                <div className="pl-4 mt-1 hidden group-hover:block">
+                <div className="pl-4 mt-1 group-hover:block">
                   {settlements.map((settlement, index) => (
                     <Link
                       key={index}
