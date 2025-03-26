@@ -86,7 +86,7 @@ export default function WelcomePopup() {
         >
           <button
             onClick={closePopup}
-            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 z-10"
+            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 z-10 hover:cursor-pointer"
             aria-label="Close popup"
           >
             <svg
