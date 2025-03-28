@@ -8,7 +8,7 @@ export default function AboutSection() {
           <div className="order-2 md:order-1">
             <div className="relative h-[400px] w-full">
               <Image
-                src="/founder-image.jpg"
+                src="/15.jpg"
                 alt="Settle Loan Founder"
                 fill
                 style={{ objectFit: "cover" }}

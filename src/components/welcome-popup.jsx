@@ -195,11 +195,11 @@ export default function WelcomePopup() {
             </div>
             <div className="hidden md:block relative bg-blue-50">
               <Image
-                src="/placeholder.svg?height=600&width=500"
-                width={500}
-                height={600}
+                src="/1.jpg"
+                width={600}
+                height={500}
                 alt="Customer service representative"
-                className="object-cover h-full"
+                className="h-full"
               />
             </div>
           </div>

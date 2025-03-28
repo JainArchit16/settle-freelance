@@ -71,7 +71,7 @@ export default function CallbackSection() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden z-10">
+        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden z-10">
           <div className="grid md:grid-cols-2 gap-0">
             <div className="p-8 md:p-10">
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -145,8 +145,8 @@ export default function CallbackSection() {
             </div>
             <div className="hidden md:block relative bg-blue-50">
               <Image
-                src="/placeholder.svg?height=600&width=500"
-                width={400}
+                src="/1.jpg"
+                width={500}
                 height={400}
                 alt="Customer service representative"
                 className="object-cover h-full"

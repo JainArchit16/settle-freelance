@@ -39,7 +39,7 @@ export default function AboutUsPage() {
       <div className="relative h-[40vh] md:h-[50vh] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/80 z-10" />
         <Image
-          src="/package"
+          src="/5.jpg"
           alt="Financial services background"
           fill
           className="object-cover"
@@ -125,7 +125,7 @@ export default function AboutUsPage() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/package"
+                src="/2.jpg"
                 alt="Financial consultation"
                 width={600}
                 height={400}
