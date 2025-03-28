@@ -11,26 +11,27 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">RESOURCES</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/personal-loan" className="hover:text-green-500">
-                  Personal Loan
-                </Link>
-              </li>
-              <li>
-                <Link href="/credit-card-loan" className="hover:text-green-500">
-                  Credit Card Loan
-                </Link>
-              </li>
-              <li>
-                <Link href="/gold-loan" className="hover:text-green-500">
-                  Gold Loan
+                <Link
+                  href="/services/personal-loan"
+                  className="hover:text-green-500"
+                >
+                  Personal Loan Settlement
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/low-cibil-score-loan"
+                  href="/services/credit-card-loan"
                   className="hover:text-green-500"
                 >
-                  Low CIBIL Score Loan
+                  Credit Card Loan Settlement
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/home-loan"
+                  className="hover:text-green-500"
+                >
+                  Home Loan Settlement
                 </Link>
               </li>
             </ul>
@@ -157,7 +158,7 @@ export default function Footer() {
                   href="mailto:info@settleloan.in"
                   className="hover:text-green-500"
                 >
-                  info@settleloan.in
+                  hello@settlemitra.com
                 </Link>
               </li>
             </ul>

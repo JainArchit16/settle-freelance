@@ -20,7 +20,7 @@ export default function Header() {
             href="mailto:info@settleloan.in"
             className="text-green-600 hover:underline px-2"
           >
-            info@settleloan.in
+            hello@settlemitra.com
           </Link>
         </div>
       </div>
