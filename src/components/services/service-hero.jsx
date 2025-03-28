@@ -77,9 +77,7 @@ export default function ServiceHero({ service }) {
 
   const primaryColorHex = colorMap[primaryColor] || "#00B050";
   const secondaryColorHex = colorMap[secondaryColor] || "#10B981";
-  console.log(primaryColor, "1");
-  console.log(secondaryColor, "2");
-  // console.log(service.color);
+
   return (
     <section className="relative overflow-hidden pt-20 pb-24">
       <div

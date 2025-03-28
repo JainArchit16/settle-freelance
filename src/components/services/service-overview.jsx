@@ -1,5 +1,6 @@
 "use client";
 
+import ReactMarkdown from "react-markdown";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
@@ -52,7 +53,11 @@ export default function ServiceOverview({ service }) {
 
               {service.content?.map((paragraph, index) => (
                 <div key={index}>
-                  <p className="whitespace-pre-line">{paragraph}</p>
+                  {paragraph.map((para, ind) => (
+                    <div key={ind} className="mb-1">
+                      <ReactMarkdown>{para}</ReactMarkdown>
+                    </div>
+                  ))}
                   <br></br>
                 </div>
               ))}
