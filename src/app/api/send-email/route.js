@@ -54,7 +54,7 @@ const createCustomerEmail = (data) => `
 <body style="margin: 0; padding: 20px; font-family: Arial, sans-serif;">
     <div style="max-width: 600px; margin: 0 auto; background: #f8f9fa; border-radius: 10px; padding: 30px;">
         <div style="text-align: center; margin-bottom: 30px;">
-            <img src="https://via.placeholder.com/150x50.png?text=Company+Logo" alt="Company Logo" style="max-width: 200px; height: auto;">
+            
             <h1 style="color: #2563eb; font-size: 28px; margin: 20px 0;">Thank You, ${data.name}!</h1>
         </div>
         
@@ -74,7 +74,7 @@ const createCustomerEmail = (data) => `
         
         <div style="margin-top: 30px; text-align: center; color: #6b7280; font-size: 14px;">
             <p>This is an automated message. Please do not reply to this email.</p>
-            <p style="margin-top: 10px;">© 2025 Your Company Name. All rights reserved.</p>
+            <p style="margin-top: 10px;">© 2025 Settle Mitra. All rights reserved.</p>
         </div>
     </div>
 </body>
@@ -94,7 +94,8 @@ export async function POST(request) {
 
   try {
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.hostinger.com",
+      port: 587,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -111,7 +112,7 @@ export async function POST(request) {
 
     // Send confirmation email to customer
     await transporter.sendMail({
-      from: `"SettlesMyLoan" <${process.env.EMAIL_USER}>`,
+      from: `"Settle Mitra" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: "Thank You for Contacting Us",
       html: createCustomerEmail({ name }),
