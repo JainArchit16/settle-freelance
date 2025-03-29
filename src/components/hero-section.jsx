@@ -33,7 +33,7 @@ export default function HeroSection() {
       </div>
 
       {/* Slider indicators */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center">
+      {/* <div className="absolute bottom-8 left-0 right-0 flex justify-center">
         <div className="flex space-x-2">
           {[...Array(6)].map((_, i) => (
             <div
@@ -44,7 +44,7 @@ export default function HeroSection() {
             ></div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

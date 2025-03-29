@@ -1,19 +1,53 @@
+"use client";
+
 import Image from "next/image";
 
+import { useEffect, useState } from "react";
+
 export default function AboutSection() {
+  const images = ["/3.jpg", "/4.jpg", "/9.jpg", "/7.jpg", "/8.jpg", "/11.jpg"];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Auto slideshow effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
             <div className="relative h-[400px] w-full">
-              <Image
+              {/* <Image
                 src="/15.jpg"
                 alt="Settle Loan Founder"
                 fill
                 style={{ objectFit: "cover" }}
                 className="rounded-lg"
-              />
+              /> */}
+              {images.map((src, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-1000 ${
+                    index === currentImageIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  <Image
+                    src={src || "/placeholder.svg"}
+                    alt={`Settle Loan Image ${index + 1}`}
+                    fill
+                    style={{ objectFit: "cover" }}
+                    className="rounded-lg"
+                  />
+                </div>
+              ))}
             </div>
           </div>
 

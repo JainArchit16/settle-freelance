@@ -8,16 +8,16 @@ export default function Header() {
         <div className="flex items-center">
           <span className="hidden md:inline">Call us Tollfree: </span>
           <Link
-            href="tel:1800-309-1902"
+            href="https://wa.me/+919310392802?text=Hello%20there!"
             className="text-green-600 hover:underline px-2"
           >
-            1800-309-1902
+            +91 9310392802
           </Link>
         </div>
         <div className="flex items-center">
           <span className="hidden md:inline">Email: </span>
           <Link
-            href="mailto:info@settleloan.in"
+            href="mailto:hello@settlemitra.com"
             className="text-green-600 hover:underline px-2"
           >
             hello@settlemitra.com

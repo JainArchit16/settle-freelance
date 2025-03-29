@@ -20,7 +20,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/credit-card-loan"
+                  href="/services/credit-card"
                   className="hover:text-green-500"
                 >
                   Credit Card Loan Settlement
@@ -148,14 +148,17 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <span className="text-gray-400">Tollfree:</span>{" "}
-                <Link href="tel:1800-309-1902" className="hover:text-green-500">
-                  1800-309-1902
+                <Link
+                  href="https://wa.me/+919310392802?text=Hello%20there!"
+                  className="hover:text-green-500"
+                >
+                  +91 9310392802
                 </Link>
               </li>
               <li>
                 <span className="text-gray-400">Email Id:</span>{" "}
                 <Link
-                  href="mailto:info@settleloan.in"
+                  href="mailto:hello@settlemitra.com"
                   className="hover:text-green-500"
                 >
                   hello@settlemitra.com

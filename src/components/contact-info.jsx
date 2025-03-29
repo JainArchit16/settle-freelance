@@ -11,10 +11,10 @@ export default function ContactInfo() {
           <div>
             <p className="text-sm text-gray-500">Tollfree:</p>
             <a
-              href="tel:1800-309-1902"
+              href="https://wa.me/+919310392802?text=Hello%20there!"
               className="text-lg font-medium hover:text-green-600 transition-colors"
             >
-              1800-309-1902
+              +91 9310392802
             </a>
           </div>
         </div>
@@ -24,10 +24,10 @@ export default function ContactInfo() {
           <div>
             <p className="text-sm text-gray-500">Email:</p>
             <a
-              href="mailto:info@settleloan.in"
+              href="mailto:hello@settlemitra.com"
               className="text-lg font-medium hover:text-green-600 transition-colors"
             >
-              info@settleloan.in
+              hello@settlemitra.com
             </a>
           </div>
         </div>
