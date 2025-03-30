@@ -74,14 +74,14 @@ export default function WelcomePopup() {
 
       {/* Popup */}
       <div
-        className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-500 ${
+        className={`fixed inset-0 z-50 flex items-center justify-center md:p-4 transition-all duration-500 ${
           isOpen
             ? "opacity-100 scale-100"
             : "opacity-0 scale-95 pointer-events-none"
         }`}
       >
         <div
-          className="relative w-full max-w-4xl bg-white rounded-xl shadow-2xl overflow-hidden"
+          className="relative w-full md:max-w-4xl bg-white rounded-xl shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
           <button
@@ -105,12 +105,12 @@ export default function WelcomePopup() {
             </svg>
           </button>
 
-          <div className="grid md:grid-cols-2 gap-0">
+          <div className="flex flex-row md:grid md:grid-cols-2 gap-0">
             <div className="p-8 md:p-10">
               <h2 className="text-3xl font-bold tracking-tight mb-6">
                 Get a Free Consultation
               </h2>
-              <p className="text-gray-600 mb-8">
+              <p className="md:block hidden text-gray-600 mb-8">
                 Fill out the form below and our team will contact you to discuss
                 how we can help with your needs.
               </p>
@@ -193,7 +193,7 @@ export default function WelcomePopup() {
                 </button>
               </form>
             </div>
-            <div className="hidden md:block relative bg-blue-50">
+            <div className="block relative bg-blue-50">
               <Image
                 src="/1.jpg"
                 width={600}

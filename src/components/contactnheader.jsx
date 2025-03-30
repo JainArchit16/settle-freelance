@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 export default function ContactNHeader() {
   return (
     <div className="relative h-[40vh] md:h-[50vh] overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/80 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-400/80 to-gray-500/80 z-10" />
       <Image
         src="/7.jpg"
         alt="Financial services background"
