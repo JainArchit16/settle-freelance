@@ -3,6 +3,7 @@
 import ReactMarkdown from "react-markdown";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 export default function ServiceOverview({ service }) {
   const ref = useRef(null);
@@ -50,7 +51,13 @@ export default function ServiceOverview({ service }) {
                 the best possible outcome for your{" "}
                 {service.shortTitle.toLowerCase()} settlement.
               </p> */}
-
+              <Image
+                src={service.image}
+                width={500}
+                height={200}
+                alt=""
+                className="h-full mx-auto my-8"
+              />
               {service.content?.map((paragraph, index) => (
                 <div key={index}>
                   {paragraph.map((para, ind) => (
