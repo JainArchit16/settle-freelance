@@ -63,7 +63,7 @@ const createCustomerEmail = (data) => `
                 We've received your inquiry and our team will get back to you within 24 hours.
             </p>
             <div style="margin: 30px 0;">
-                <a href="https://yourwebsite.com" 
+                <a href="https://www.settlemitra.com" 
                    style="background: #2563eb; color: white; padding: 12px 25px; 
                           text-decoration: none; border-radius: 5px; display: inline-block;
                           font-weight: 500; transition: background 0.3s;">

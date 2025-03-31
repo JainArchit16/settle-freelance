@@ -3,6 +3,7 @@ import WelcomePopup from "@/components/welcome-popup";
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Settle Mitra",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Toaster />
         <WelcomePopup />
         <Header />
         <Navbar />
