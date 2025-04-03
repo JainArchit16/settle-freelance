@@ -63,6 +63,7 @@ export const services = [
         "With Settle Mitra , you don't have to face these challenges alone. Our expert team is ready to guide you through the settlement process, helping you achieve financial freedom and peace of mind.",
       ],
     ],
+    images: ["/s1.jpg", "/s2.jpg", "/s3.jpg", "/s4.jpg"],
   },
   {
     id: "credit-card",
@@ -73,7 +74,6 @@ export const services = [
       "Credit card debt accrues a higher rate of interest and other related charges making it difficult to repay the debt. These extra interest charges result in an increase in debt amount along with financial stress.",
     icon: "CreditCard",
     color: "from-blue-500 to-cyan-500",
-    image: "/12.jpg",
     content: [
       [
         " At Settle Mitra , we understand the stress and financial strain caused by mounting credit card debt. With high interest rates, penalties, and minimum payments that barely make a dent in your outstanding balance, managing credit card dues can feel like an insurmountable challenge. That's why we specialize in Credit Card Loan Settlements —a strategic solution to help you resolve your debt for less than the total amount owed, while protecting your financial future.",
@@ -130,6 +130,7 @@ export const services = [
         "With Settle Mitra , you don't have to face these challenges alone. Our expert team is ready to guide you through the settlement process, helping you achieve financial freedom and peace of mind.",
       ],
     ],
+    images: ["/s5.jpg", "/s6.jpg", "/s7.jpg", "/s8.jpg"],
   },
   {
     id: "anti-harassment",
@@ -169,7 +170,7 @@ export const services = [
         "The longer you endure harassment, the more it impacts your mental well-being and quality of life. Don't let unethical practices add to your stress. With Settle Mitra , you can take control of your situation, stop harassment, and work toward a sustainable debt resolution.",
       ],
     ],
-    image: "/22.jpg",
+    images: ["/s9.jpg", "/s10.jpg", "/s11.jpg", "/s12.jpg"],
   },
   {
     id: "credit-score",
@@ -180,7 +181,8 @@ export const services = [
       "Are you asking yourself the question of how to improve your CIBIL score after loan Settlement?",
     icon: "Blocks",
     color: "from-red-500 to-red-100",
-    image: "/10.jpg",
+    images: ["/s13.jpg", "/s14.jpg", "/s15.jpg", "/2.jpg"],
+
     content: [
       [
         "At Settle Mitra , we understand the importance of a strong credit score in achieving financial stability and unlocking opportunities. Whether you're looking to secure a loan, apply for a credit card, or even rent an apartment, your credit score plays a critical role. However, rebuilding or improving your credit score can feel like a daunting task, especially if you've faced challenges like missed payments, defaults, or debt settlements.",
@@ -230,7 +232,8 @@ export const services = [
     slug: "home-loan",
     title: "Home Loan Settlement",
     shortTitle: "Home Loan",
-    image: "/29.jpg",
+    images: ["/41.jpg", "/2.jpg", "/3.jpg", "/4.jpg"],
+
     description:
       "You can benefit from a decrease in your EMI as well as cheaper interest rates. Most Importantly it eases your financial burden, giving you peace of mind.",
     icon: "Home",
@@ -290,7 +293,8 @@ export const services = [
     slug: "vehicle-loan",
     title: "Vehicle Loan Settlement",
     shortTitle: "Vehicle Loan",
-    image: "/30.jpg",
+    images: ["/5.jpg", "/91.jpg", "/7.jpg", "/8.jpg"],
+
     description:
       "A vehicle loan Settlement is the total amount needed to settle, or completely payoff an existing vehicle loan. Vehicle loan Settlement is another term for what is commonly referred to as the payoff amount. vehicle loan Settlements are normally time-sensitive quotations and the amount of a Settlement can vary from day to day.",
     icon: "Car",
@@ -362,7 +366,8 @@ export const services = [
       "Education loan Settlement refers to the process of negotiating with a lender to reach an agreement on the repayment terms of an education loan. When borrowers encounter financial difficulties and become unable to fulfil their loan obligations, they may explore options for loan Settlement to amicably resolve their debt.",
     icon: "GraduationCap",
     color: "from-red-500 to-rose-500",
-    image: "/91.jpg",
+    images: ["/9.jpg", "/10.jpg", "/11.jpg", "/15.jpg"],
+
     content: [
       [
         "At Settle Mitra , we understand the challenges faced by individuals burdened with education loans. While pursuing higher education is an investment in your future, repaying the loan can become overwhelming due to high EMIs, interest rates, and unforeseen financial hardships. Whether it's due to unemployment,underemployment, or other life challenges, managing education loan repayments can feel like an insurmountable task. That's why we specialize in Education Loan Settlements —a strategic solution to help you resolve your outstanding debt for an amount less than the total owed, while protecting your financial future and peace of mind.",
