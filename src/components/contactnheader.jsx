@@ -4,28 +4,39 @@ import { ChevronDown } from "lucide-react";
 
 export default function ContactNHeader() {
   return (
-    <div className="relative h-[40vh] md:h-[50vh] overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-400/80 to-gray-500/80 z-10" />
-      <Image
-        src="/7.jpg"
-        alt="Financial services background"
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="relative z-20 container mx-auto h-full flex flex-col justify-center items-start px-4 md:px-6">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            Contact Us
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-            We're dedicated to helping you achieve financial freedom through
-            expert debt settlement solutions.
-          </p>
+    <div className="relative h-[200px] md:h-[300px] bg-gradient-to-r from-primary/90 to-primary overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-black/50" />
+        {/* Decorative elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full">
+            <div className="absolute top-0 left-0 w-full h-full opacity-10">
+              <div className="absolute top-0 left-1/4 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-xl animate-blob" />
+              <div className="absolute top-0 right-1/4 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-xl animate-blob animation-delay-2000" />
+              <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-xl animate-blob animation-delay-4000" />
+            </div>
+          </div>
         </div>
+
+        {/* Floating SVGs */}
+        {/* <FloatingSvgs
+              count={15}
+              minSize={20}
+              maxSize={50}
+              color="rgba(255, 255, 255, 0.2)"
+            /> */}
+        <Image
+          src="/7.jpg"
+          alt="Category"
+          fill
+          className="object-cover opacity-55"
+          priority
+        />
       </div>
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20">
-        <ChevronDown className="w-10 h-10 text-white animate-bounce" />
+      <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-white text-center">
+          Contact Us
+        </h1>
       </div>
     </div>
   );
