@@ -28,6 +28,7 @@ const categories = {
         icon: "Star",
       },
     ],
+    image: "/s6.jpg",
   },
   "one-time-settlement": {
     title: "One Time Settlement (OTS)",
@@ -53,6 +54,7 @@ const categories = {
         icon: "Star",
       },
     ],
+    image: "/s7.jpg",
   },
   "structured-settlement": {
     title: "Structured Settlement",
@@ -78,6 +80,7 @@ const categories = {
         icon: "Star",
       },
     ],
+    image: "/15.jpg",
   },
   "structured-cleared-clearance": {
     title: "Structured Settlement With Cleared Clearance",
@@ -103,6 +106,7 @@ const categories = {
       //     icon: "Star",
       //   },
     ],
+    image: "/s3.jpg",
   },
   "moratorium-settlement": {
     title: "Moratorium Period Settlement",
@@ -128,6 +132,7 @@ const categories = {
       //     icon: "Star",
       //   },
     ],
+    image: "/s4.jpg",
   },
   "reversed-dues-settlement": {
     title: "Reversed Dues Settlement",
@@ -153,6 +158,7 @@ const categories = {
         icon: "Star",
       },
     ],
+    image: "/s15.jpg",
   },
   "statute-barred-settlement": {
     title: "Statute Barred Settlement",
@@ -178,6 +184,7 @@ const categories = {
         icon: "Star",
       },
     ],
+    image: "/s11.jpg",
   },
   "prepayment-settlement": {
     title: "Prepayment Settlement",
@@ -203,6 +210,7 @@ const categories = {
         icon: "Star",
       },
     ],
+    image: "/7.jpg",
   },
   // Add more categories here
 };
@@ -214,10 +222,9 @@ export default async function CategoryPage({ params }) {
   if (!category) {
     notFound();
   }
-
   return (
     <div>
-      <CategoryHeader title={category.title} />
+      <CategoryHeader title={category.title} src={category?.image} />
       <CategoryContent
         description={category.description}
         content={category.content}

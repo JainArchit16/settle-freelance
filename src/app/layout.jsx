@@ -12,14 +12,22 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    title: "Settle Mitra",
+    description: "One Solution to all your financial problems.",
+    url: "https://settlemitra.com",
+    siteName: "Settle Mitra",
+    type: "website",
+  },
+  metadataBase: new URL("https://settlemitra.com"),
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <head>
+      <head>
         <link rel="icon" href="/favicon.ico" />
-      </head> */}
+      </head>
       <Head>
         <title>Settle Mitra</title>
         <meta

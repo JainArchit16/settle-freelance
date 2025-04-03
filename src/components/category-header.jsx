@@ -1,6 +1,6 @@
-import FloatingSvgs from "./floating-svgs";
+import Image from "next/image";
 
-export default function CategoryHeader({ title }) {
+export default function CategoryHeader({ title, src }) {
   return (
     <div className="relative h-[200px] md:h-[300px] bg-gradient-to-r from-primary/90 to-primary overflow-hidden">
       <div className="absolute inset-0">
@@ -17,11 +17,18 @@ export default function CategoryHeader({ title }) {
         </div>
 
         {/* Floating SVGs */}
-        <FloatingSvgs
+        {/* <FloatingSvgs
           count={15}
           minSize={20}
           maxSize={50}
           color="rgba(255, 255, 255, 0.2)"
+        /> */}
+        <Image
+          src={src}
+          alt="Category"
+          fill
+          className="object-cover opacity-55"
+          priority
         />
       </div>
       <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
